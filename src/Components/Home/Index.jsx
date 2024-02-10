@@ -3,7 +3,7 @@ import React from 'react';
 
 const Home = () => {
     return(
-        <div className="bg-green h-screen" >
+        <div className={`bg-green h-screen`} >
         <div className="flex-col py-20 items-center text-center text-white">
             <h1 className="text-6xl md:text-8xl py-2 tracking-widest">Colmena</h1>
             <h4 className="text-base md:text-4xl py-1 tracking-widest">Espacio + Comunidad</h4>
