@@ -19,7 +19,8 @@ const Description = () =>{
                         {/* <ReadMore/> */}
                     </div>
                     <aside className="hidden md:block flex justify-center items-center w-2/4">
-                        <Image src={foto} alt="descripcion" />
+                        <img src="https://images.squarespace-cdn.com/content/v1/5ff4c0171116ae7b95563078/b3957945-f3ff-40e8-9907-2c11d7438424/ia-en-el-desarrollo-inmobiliario" alt="descripcion" />
+                        {/* <Image src={foto} alt="descripcion" /> */}
                     </aside>
                 </div>
             </div>
