@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
               {LinkItems.map(l => {
-                    return <Link key={l.link} className="text-grey hover:text-orange px-5 py-2 rounded-md text-base font-medium" href={l.linkRef}>{l.link}</Link>
+                    return <Link key={l.link} className="text-black hover:text-orange px-5 py-2 rounded-md text-base font-medium" href={l.linkRef}>{l.link}</Link>
                 }
                 )}
               </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className={`${isOpen ? 'block' : 'hidden'} md:hidden `}>
           <div className="px-2 pt-2 pb-2 space-y-1 sm:px-3">
            {LinkItems.map(l => {
-                    return <Link key={l.link} className="border-b border-solid border-grey text-grey hover:text-orange block px-1 mx-6 py-7 text-center text-base font-medium" href={l.linkRef}>{l.link}</Link>
+                    return <Link key={l.link} className="border-b border-solid border-grey text-black hover:text-orange block px-1 mx-6 py-7 text-center text-base font-medium" href={l.linkRef}>{l.link}</Link>
                 }
                 )}
           </div>

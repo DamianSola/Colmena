@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "nombre": "Residencial Las Palmas",
+      "descripcion": "Complejo residencial de lujo con vista al mar, ubicado en una zona exclusiva de la ciudad.",
+      "imagen": "https://d2p0bx8wfdkjkb.cloudfront.net/static/properties/3044MFNQJZ/QGBNWRFER4/atxskNw92a/PALMAS.jpg"
+    },
+    {
+      "id": 2,
+      "nombre": "Torre del Sol",
+      "descripcion": "Torre de apartamentos de alto standing con servicios de primer nivel y espectaculares vistas panorámicas.",
+      "imagen": "https://res.cloudinary.com/luxe/t_1200/f_auto/v1/campings/1664842/camping-la-torre-del-sol-miami-platja-9A-43-96-7C-83-D2-65-86-A2-EB-EB-9A-DC-26-54-D5-55-99-E9-1E.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Urbanización Vista Verde",
+      "descripcion": "Desarrollo residencial en un entorno natural con amplias zonas verdes, senderos y lagos artificiales.",
+      "imagen": "https://www.hghdesarrollos.net/wp-content/uploads/2017/05/Vista-Verde-Drone-700x450.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Condominio Los Robles",
+      "descripcion": "Conjunto de condominios exclusivos con instalaciones recreativas y seguridad 24/7.",
+      "imagen": "https://www.mardelsurpropiedades.cl/upload/propiedad/519473-1.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Paseo del Río",
+      "descripcion": "Proyecto de desarrollo inmobiliario junto al río, con acceso a áreas de recreación y entretenimiento.",
+      "imagen": "https://images1.forrent.com/i2/gLaahoqhjTPEke0mE0vHjgVK0FSNrsJ-RY_uGUDXNeY/112/image.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "Parque Residencial Bella Vista",
+      "descripcion": "Urbanización planificada con viviendas modernas y áreas comunes bien equipadas para la familia.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJ1shyajR1DfkLTDpE8kxC8kJpJxYkr5eVhPeAeOLWVPAy4zezelgNR-nqDY2eofWj3s&usqp=CAU"
+    },
+    {
+      "id": 7,
+      "nombre": "Ciudad Jardín",
+      "descripcion": "Comunidad sostenible con amplias zonas verdes, huertos urbanos y opciones de movilidad ecológica.",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZck6tSq0mzmPwjeRQKepeCww_8PsC5Vnzqj4Az-xOl88rP1Kbsu59yGPeI255JsV75Q&usqp=CAU"
+    },
+    {
+      "id": 8,
+      "nombre": "Conjunto Residencial Primavera",
+      "descripcion": "Conjunto de viviendas multifamiliares con áreas de recreación y acceso a servicios cercanos.",
+      "imagen": "https://webbox.imgix.net/images/rynrldfczrupjkat/7533387e-a54a-4e6a-b8d2-970691a8d46d.png?auto=format,compress&fit=crop&crop=entropy&w=375&h=280&q=55"
+    }
+  ]
+  

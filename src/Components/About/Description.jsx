@@ -8,7 +8,7 @@ const description = {title:"¿Quienes somos?", desc: "Somos una compañía desar
 const Description = () =>{
     return(
         <>
-            <div  className="hidden md:block  py-10 bg-white w-full">
+            <div  className="hidden md:block py-10 bg-white w-full">
                     <h1 className="text-left mt-5 text-4xl font-medium mx-8 my-5 py-4 tracking-wider" >{description.title}</h1>
                 <div className="flex">
                     <div className=" mx-8 w-2/4">
@@ -16,7 +16,7 @@ const Description = () =>{
                         <p className='lead text-left text-2xl font-medium leading-relaxed'>
                             {description.desc}
                         </p>
-                        <button className="bg-black relative text-1xl font-medium text-white hover:text-black border-2 hover:bg-white m-5 px-4 ">Leer mas</button>
+                        {/* <ReadMore/> */}
                     </div>
                     <aside className="hidden md:block flex justify-center items-center w-2/4">
                         <Image src={foto} alt="descripcion" />
@@ -28,10 +28,11 @@ const Description = () =>{
                 <aside className="flex w-full justify-center items-center ">
                     <Image src={foto} width="500" alt="descripcion" />
                 </aside>
-                <p className='lead mx-6 sm:mx-10 my-5 text-justify text-base font-medium leading-relaxed'>
+                <p className='lead mx-6 sm:mx-10 mt-5 text-justify text-base font-medium leading-relaxed'>
                     {description.desc}
                 </p>
-                <ReadMore/>
+                    {/* <button className="bg-black relative  border-black text-1xl font-medium text-white hover:text-black border-2 hover:bg-white m-5 px-4 ">Leer mas</button> */}
+                {/* <ReadMore/> */}
             </div>
         </>
     )

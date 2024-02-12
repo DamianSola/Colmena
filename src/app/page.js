@@ -4,6 +4,8 @@ import Image from "next/image";
 import Description from "@/Components/About/Description";
 import Us from "@/Components/About/Us"
 import Footer from "@/Components/Footer/Index";
+import Project from "@/Components/Projects/Index";
+import More from "@/Components/About/More";
 
 export default function Home() {
   return (
@@ -11,7 +13,9 @@ export default function Home() {
       <NavBar/>
       <Landing/>
       <Description/>
+      <More/>
       <Us/>
+      <Project/>
       <Footer/>
     </main>
   );
