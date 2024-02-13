@@ -4,7 +4,7 @@ const { FaBinoculars, FaMountain, FaHandHoldingHeart } = require("react-icons/fa
 
 const More = () => {
     return(
-        <div className="bg-white block sm:flex py-8 px-4 font text-greendark">
+        <div className="bg-white block sm:flex py-8 px-4 font text-greendark dark:text-white dark:bg-greydark">
             <span className="bg-greenn w-4/5 sm:w-1/3 my-8 sm:m-4 p-4 sm:shadow-md">
                 <FaMountain className="text-6xl sm:text-8xl m-auto my-8"/>
                 <p className="text-sm sm:text-base"><strong>Misión: </strong>

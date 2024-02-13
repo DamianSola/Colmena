@@ -13,7 +13,9 @@ module.exports = {
       'grey':'#6B6B6B',
       'black': '#0a0a0a',
       'greenlight': 'rgba(95, 98, 69, 0.5)',
-      'greendark': '#4B4C37'
+      'greendark': '#4B4C37',
+      'blue': '#172554',
+      'darkgrey': '#111827'
     },
     extend: {
       backgroundImage: {

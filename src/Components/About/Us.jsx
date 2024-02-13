@@ -19,7 +19,7 @@ const people = [
 const Us = () => {
     
     return(
-        <div className="bg-white justify-center">
+        <div className="bg-white dark:greydark justify-center">
             <div className="block md:hidden">
                 {people.map((e,i) => {
                     return <Profile key={i} description={e.description} image={e.image} name={e.name} />
@@ -37,7 +37,7 @@ const Us = () => {
 
 const Profile = ({description,name,image}) =>{
     return(
-        <div className="bg-white">
+        <div className="bg-white dark:bg-greydark dark:text-white">
         <img src={image} width="500" height="500" alt="foto-perfil"/>
         <h2 className="text-left mx-6 text-4xl font-medium mt-6">
             {name}
