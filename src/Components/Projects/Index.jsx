@@ -10,9 +10,6 @@ const Project = () => {
         <div className="bg-white">         
                 <h1 className="text-left text-4xl font-medium mx-8 py-8 tracking-wider" >Proyectos</h1>
                 <Carousel slides={projects} />
-                {/* {projects.map(e => {
-                    <Carousel name={e.nombre} image={e.imagen}/>
-                })} */}
         </div>
     )
 }

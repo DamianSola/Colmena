@@ -35,6 +35,10 @@ export default function App({slides}) {
         {slides.map((e,i) => {
             return <SwiperSlide key={i}>
                 <img src={e.imagen} />
+                <span>
+                  <h1><strong>{e.nombre}</strong></h1>
+                <p>{e.descripcion}</p>
+                </span>
             </SwiperSlide>
         })}
       </Swiper>
@@ -42,7 +46,7 @@ export default function App({slides}) {
         onSwiper={setThumbsSwiper}
         loop={true}
         spaceBetween={5}
-        slidesPerView={4}
+        slidesPerView={8}
         freeMode={true}
         watchSlidesProgress={true}
         modules={[FreeMode, Navigation, Thumbs]}
@@ -50,7 +54,7 @@ export default function App({slides}) {
       >
         {slides.map((e,i) => {
             return <SwiperSlide key={i}>
-                <img src={e.imagen} />
+                <img className="h-24" src={e.imagen} />
             </SwiperSlide>
         })}
       </Swiper>
