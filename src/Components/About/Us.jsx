@@ -19,7 +19,7 @@ const people = [
 const Us = () => {
     
     return(
-        <div className="bg-greenlight justify-center">
+        <div className="bg-white justify-center">
             <div className="block md:hidden">
                 {people.map((e,i) => {
                     return <Profile key={i} description={e.description} image={e.image} name={e.name} />

@@ -29,7 +29,8 @@
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
+    
   }
   
   .swiper-slide img {
@@ -59,6 +60,7 @@
   .mySwiper2 {
     height: 100%;
     width: 100%; 
+
   }
   
   .mySwiper {
@@ -80,17 +82,15 @@
   .swiper-slide img {
     display: block;
     width: 100%;
-    max-height: 500px;
+    max-height: 490px;
     object-fit: cover;
-    /* position: relative;
-    z-index: 1; */
   }
 
   .swiper-slide span{
     position: absolute;
     width: 100%;
     padding: 20px;
-    z-index: 5;
+    /* z-index: 5; */
     color: #fff;
     background-color: #00000082;
   }

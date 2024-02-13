@@ -3,7 +3,7 @@ import { FaFacebook, FaHeart, FaInstagram, FaLinkedin, FaTiktok } from 'react-ic
 
 const Footer = () => {
     return(
-        <footer className="bg-green">
+        <footer className="bg-green" id="contact">
             <div className="block sm:hidden">
                 <h1 className="text-4xl text-semibold leading-loose mx-8 px-4 pt-4" >Contacto</h1>
                 <Contact/>
@@ -26,7 +26,7 @@ const Footer = () => {
                     <p className="mt-5 py-10">© 2023 by Personal Life Coach</p>
                 </aside>
             </div>
-            <div className="hidden sm:flex justify-around pb-6">
+            <div className="hidden sm:flex justify-around pb-8">
                 <aside className="my-10 px-10 w-1/3">
                 <h1 className="text-4xl text-semibold leading-loose">Contacto</h1>
                     <span className="my-10">
