@@ -1,7 +1,9 @@
 'use client'
 import Image from "next/image";
-import foto from "./../../../public/Picture.jpg";
+// import foto from "./../../../public/Picture.jpg";
 import { ReadMore } from "../Button";
+
+const foto = "https://images.squarespace-cdn.com/content/v1/5ff4c0171116ae7b95563078/b3957945-f3ff-40e8-9907-2c11d7438424/ia-en-el-desarrollo-inmobiliario"
 
 const description = {title:"¿Quienes somos?", desc: "Somos una compañía desarrolladora inmobiliaria que nació en 1992. Contamos con una amplia experiencia en el mercado inmobiliario argentino. Hemos participado en el desarrollo de más de 1.000.000 m2 y administrado proyectos por más de U$S 1.000 millones, entre los más destacados: el Hotel Hilton de Puerto Madero, Torre Bouchard Plaza, Edificio Samsung, Edifcios River View, Palacio Paz XXI, Edificio La Rural entre otros."}
 
@@ -27,7 +29,7 @@ const Description = () =>{
             <div className="md:hidden flex-col bg-white w-auto text-center">
                 <h1 className="text-center text-4xl font-medium mx-8 py-5 tracking-wider" >{description.title}</h1>
                 <aside className="flex w-full justify-center items-center ">
-                    <Image src={foto} width="500" alt="descripcion" />
+                    <img src={foto} width="500" alt="descripcion" />
                 </aside>
                 <p className='lead mx-6 sm:mx-10 mt-5 text-justify text-base font-medium leading-relaxed'>
                     {description.desc}
