@@ -10,10 +10,10 @@ const description = {title:"¿Quienes somos?", desc: "Somos una compañía desar
 const Description = () =>{
     return(
         <>
-            <div  className="hidden md:block py-10 bg-white dark:bg-greydark dark:text-white w-full" id="about">
-                    <h1 className="text-left mt-5 text-4xl font-medium mx-8 my-5 py-4 tracking-wider" >{description.title}</h1>
-                <div className="flex">
-                    <div className=" mx-8 w-2/4">
+            <div  className="hidden md:block py-10 bg-white w-full mx-auto px-4 sm:px-6 lg:px-32" id="about">
+                    <h1 className="text-left mt-5 text-4xl font-medium my-5 py-4 tracking-wider" >{description.title}</h1>
+                <div className="flex gap-8">
+                    <div className="w-2/4">
 
                         <p className='lead text-left text-2xl font-medium leading-relaxed'>
                             {description.desc}
