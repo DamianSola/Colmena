@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const Home = () => {
     return(
-        <div className="bg-greenlight h-fit sm:h-screen text-center" id="home">
+        <div className="bg-greenlight h-fit sm:h-screen text-center" id="">
         <div className="flex-col py-20 items-center text-center text-white pt-40">
             <h1 className="text-6xl md:text-8xl py-2 tracking-widest">Colmena</h1>
             <h4 className="text-base md:text-4xl py-1 tracking-widest">Espacio + Comunidad</h4>
