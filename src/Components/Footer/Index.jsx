@@ -18,7 +18,7 @@ const Footer = () => {
                     </span>
                     <p className="my-10">info@colmena.com</p>
                     <aside className="flex justify-center">
-                    <FaFacebook className="mr-3 text-4xl"/>
+                    <FaFacebook color="red" className="mr-3 text-4xl"/>
                     <FaInstagram className="mr-3 text-4xl"/>
                     <FaLinkedin className="mr-3 text-4xl"/>
                     <FaTiktok className="mr-3 text-4xl"/>
@@ -39,10 +39,10 @@ const Footer = () => {
                     </span>
                     <p className="my-10">info@colmena.com</p>
                     <aside className="flex">
-                    <FaFacebook className="mr-3 text-4xl"/>
-                    <FaInstagram className="mr-3 text-4xl"/>
-                    <FaLinkedin className="mr-3 text-4xl"/>
-                    <FaTiktok className="mr-3 text-4xl"/>
+                    <FaFacebook color="#EA6510" className="mr-3 text-4xl"/>
+                    <FaInstagram color="#EA6510" className="mr-3 text-4xl"/>
+                    <FaLinkedin color="#EA6510" className="mr-3 text-4xl"/>
+                    <FaTiktok color="#EA6510" className="mr-3 text-4xl"/>
                     </aside>
                     <p className="my-10">© 2023 by Personal Life Coach</p>
                 </aside>

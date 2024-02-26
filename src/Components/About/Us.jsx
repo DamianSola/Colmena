@@ -19,13 +19,13 @@ const people = [
 const Us = () => {
     
     return(
-        <div className="bg-white justify-center">
+        <div className="bg-white justify-center w-full ">
             <div className="block md:hidden">
                 {people.map((e,i) => {
                     return <Profile key={i}  index={i} description={e.description} image={e.image} name={e.name} />
                 })}
             </div>
-            <div className="hidden md:block justify-center"> 
+            <div className="hidden md:block justify-center "> 
             {people.map((e,i) => {
                     return <Profile2 key={i} index={i} description={e.description} image={e.image} name={e.name} />
                 })}
@@ -59,7 +59,7 @@ const Profile2 = ({description,name,image,index}) => {
 
     if(index%2 === 0){
         return(
-            <div className="flex bg-orange lg:w-4/6 w-4/5 m-auto " >
+            <div className="flex bg-orangeLight lg:w-full w-4/5 m-auto " >
             <img src={image} className="w-2/4" alt="foto-perfil"/>
             <aside className="flex-col w-2/4 justify-center items-start mx-8"> : 
                 <h2 className="text-left text-4xl font-medium">
@@ -75,7 +75,7 @@ const Profile2 = ({description,name,image,index}) => {
     }
 
     return(
-    <div className="flex bg-green lg:w-4/6 w-4/5 m-auto ">
+    <div className="flex bg-greenlight lg:w-full w-4/5 m-auto ">
             <aside className="flex-col  justify-center items-start mx-8"> : 
                 <h2 className="text-left text-4xl font-medium">
                     {name}
