@@ -10,8 +10,8 @@ const description = {title:"¿Quienes somos?", desc: "Somos una compañía desar
 const Description = () =>{
     return(
         <>
-            <div  className="hidden md:block py-10 bg-white w-full mx-auto px-4 sm:px-6 lg:px-32" id="about">
-                    <h1 className="text-left mt-5 text-4xl font-medium my-5 py-4 tracking-wider" >{description.title}</h1>
+            <div  className="hidden md:block py-10 py-20 bg-white w-full mx-auto px-4 sm:px-6 lg:px-32" id="about">
+                    <h1 className="text-left text-4xl font-medium mb-5 tracking-wider" >{description.title}</h1>
                 <div className="flex gap-8">
                     <div className="w-2/4">
 
@@ -27,7 +27,7 @@ const Description = () =>{
                 </div>
             </div>
             <div className="md:hidden flex-col bg-white w-auto text-center">
-                <h1 className="text-center text-4xl font-medium mx-8 py-5 tracking-wider" >{description.title}</h1>
+                <h1 className="text-center text-4xl font-medium mx-8 pb-5 tracking-wider" >{description.title}</h1>
                 <aside className="flex w-full justify-center items-center ">
                     <img src={foto} width="500" alt="descripcion" />
                 </aside>
