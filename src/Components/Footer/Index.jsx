@@ -18,7 +18,7 @@ const Footer = () => {
                     </span>
                     <p className="my-10">info@colmena.com</p>
                     <aside className="flex justify-center">
-                    <FaFacebook color="red" className="mr-3 text-4xl"/>
+                    <FaFacebook className="mr-3 text-4xl"/>
                     <FaInstagram className="mr-3 text-4xl"/>
                     <FaLinkedin className="mr-3 text-4xl"/>
                     <FaTiktok className="mr-3 text-4xl"/>

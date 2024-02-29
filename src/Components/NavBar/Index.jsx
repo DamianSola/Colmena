@@ -1,5 +1,5 @@
 'use client';
-import logo from "./ColmenaLogo.png"
+import logo from "./Colmena.png"
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
@@ -19,11 +19,12 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white fixed w-full z-20">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:px-32 sticky z-auto">
+      <div className="w-full mx-auto px-4 sm:px-6 lg:pl-24 sticky z-auto">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
-            {/* <h1 className="text-black">Colmena</h1> */}
-            <Image src={logo} width='150' alt="colmena-logo" />
+            <Link  href="/">
+            <Image src={logo} width='200' alt="colmena-logo" />
+            </Link>
           </div>
 
           {/* //Tablet y Desktop */}
@@ -31,7 +32,7 @@ const Navbar = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               {LinkItems.map(l => {
-                return <Link key={l.link} className="text-black hover:text-orange px-5 py-2 rounded-md text-base font-medium" href={l.linkRef} >{l.link}</Link>
+                return <Link key={l.link} className="text-black hover:text-green rounded-none delay-75 hover:border-b px-5 py-0 rounded-md text-base font-medium" href={l.linkRef} >{l.link}</Link>
               }
               )}
             </div>

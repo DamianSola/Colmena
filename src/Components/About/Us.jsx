@@ -61,7 +61,7 @@ const Profile2 = ({description,name,image,index}) => {
         return(
             <div className="flex bg-orangeLight lg:w-full w-4/5 m-auto " >
             <img src={image} className="w-2/4" alt="foto-perfil"/>
-            <aside className="flex-col w-2/4 justify-center items-start mx-8"> : 
+            <aside className="flex-col w-2/4 justify-center items-start mx-8 pl-16"> : 
                 <h2 className="text-left text-4xl font-medium">
                     {name}
                 </h2>
@@ -76,7 +76,7 @@ const Profile2 = ({description,name,image,index}) => {
 
     return(
     <div className="flex bg-greenlight lg:w-full w-4/5 m-auto ">
-            <aside className="flex-col  justify-center items-start mx-8"> : 
+            <aside className="flex-col  justify-center items-start mx-8 pl-16"> : 
                 <h2 className="text-left text-4xl font-medium">
                     {name}
                 </h2>

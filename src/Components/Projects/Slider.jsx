@@ -27,34 +27,21 @@ export default function App({slides}) {
         }}
         loop={true}
         spaceBetween={10}
+        slidesPerView={4}
         navigation={true}
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
         {slides.map((e,i) => {
-            return <SwiperSlide key={i}>
+            return <SwiperSlide key={i} >
+
                 <img src={e.imagen} />
                 <span>
-                  <h1><strong>{e.nombre}</strong></h1>
-                <p>{e.descripcion}</p>
+                  <h1>{e.nombre}</h1>
                 </span>
-            </SwiperSlide>
-        })}
-      </Swiper>
-      <Swiper
-        onSwiper={setThumbsSwiper}
-        loop={true}
-        spaceBetween={5}
-        slidesPerView={8}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
-      >
-        {slides.map((e,i) => {
-            return <SwiperSlide key={i}>
-                <img className="h-24" src={e.imagen} />
+                {/* <div style={{backgroundImage: 'url(' + e.imagen + ')'}} width="400">
+              </div> */}
             </SwiperSlide>
         })}
       </Swiper>
