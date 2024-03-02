@@ -1,10 +1,35 @@
+'use client'
 import Contact from "./Contact";
 import { FaFacebook, FaHeart, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
+import React, { useState, useEffect, useRef } from "react";
 
 const Footer = () => {
+
+    const  [animation, setAnimation] = useState("footer-hidden")
+    const footerRef = useRef()
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const div = footerRef.current;
+
+            const {y} = div.getBoundingClientRect();
+
+            if(y  > -280 && y < 400) setAnimation('footer-show')
+            // else setAnimation( 'footer-hidden')
+
+        }
+
+        window.addEventListener( "scroll", handleScroll);
+    
+        return () => window.removeEventListener( "scroll", handleScroll)
+
+
+    },[])
+
     return(
-        <footer className="bg-green" id="contact">
-            <div className="block sm:hidden">
+        <footer className={`bg-green ${animation}`} id="contact" >
+            <div className={`block sm:hidden ${animation}`} ref={footerRef}>
                 <h1 className="text-4xl text-semibold leading-loose mx-8 px-4 pt-4" >Contacto</h1>
                 <Contact/>
                 <aside className="mt-10 px-10 w-full text-center">

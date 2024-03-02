@@ -6,23 +6,62 @@ html{
   scroll-behavior: smooth;
 }
 
-@keyframes fade-in-up {
-  from {
+@keyframes fadeInLeft {
+  0% {
     opacity: 0;
-    /* transform: translateY(20px); */
-    scale: 25%;
+    transform: translateX(-200px);
   }
-  to {
+  100% {
     opacity: 1;
-    scale: 100%;
-    /* transform: translateY(0); */
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
+.fade-in-left {
+  animation: fadeInLeft 0.9s ease-out;
+}
 
-.animate-fade-in-up {
-  view-timeline-name: --image;
-  animation: fade-in-up 1s ease-out;
-  animation-fill-mode: both;
-  opacity: 0;
+.fade-in-right {
+  animation: fadeInRight 0.9s ease-out;
+}
+
+
+.ocultar{
+  transform: translateY(100px);
+  opacity:  0;
+  transition: all 1.2s ease-out;
+}
+
+.ocultar-rigth{
+  transform: translateY(100px);
+  opacity:  0;
+  transition: all 1.2s ease-out;
+}
+
+.mostrar{
+  /* transform: scale(1); */
+  transform: translateY(0);
+  opacity:  1;
+  transition: all 1.2s ease-out;
+}
+
+.footer-hidden{
+  opacity:  0;
+  transition: all 1.2s ease-out;
+
+}
+
+.footer-show{
+  opacity:  1;
+  transition: all 1.2s ease-out;
 }

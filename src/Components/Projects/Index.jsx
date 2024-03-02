@@ -1,15 +1,38 @@
+'use client'
 import projects from "./Projects"
-import React from "react";
 import Carousel from "./Slider"
+import React, { useEffect, useRef, useState } from 'react';
 
 
 const Project = () => {
 
+    const  [project, setProject] = useState("ocultar")
+    const divRef = useRef()
+
+
+    useEffect(() => {
+       
+        const handleScroll = () => {
+            const div = divRef.current;
+
+            const {y} = div.getBoundingClientRect();
+
+            if(y  > -280 && y < 400) setProject('mostrar')
+            // else setProject( 'ocultar')
+
+        }
+
+        window.addEventListener( "scroll", handleScroll);
+    
+        return () => window.removeEventListener( "scroll", handleScroll)
+
+    },[])
+
     return(
         <div className="bg-white p-4 lg:px-24 lg:py-20 " id="projects">         
-                <h1 className="text-left text-4xl font-medium mx-1 pb-8 tracking-wider ">PROYECTOS</h1>
-                <div className="hidden md:block animate-fade-in-up">
-                <Carousel slides={projects}/>
+                <h1 className={`text-left text-4xl font-medium mx-1 pb-8 tracking-wider ${project}`} ref={divRef}>PROYECTOS</h1>
+                <div className={`hidden md:block  ${project}`} >
+                <Carousel slides={projects} />
                 </div>
                 <div className="flex-col md:hidden">
                     {projects && projects.map((e,i) => {
