@@ -15,9 +15,8 @@ const Footer = () => {
 
             const {y} = div.getBoundingClientRect();
 
-            if(y  > -280 && y < 400) setAnimation('footer-show')
+            if(y  > -300 && y < 500) setAnimation('footer-show')
             // else setAnimation( 'footer-hidden')
-
         }
 
         window.addEventListener( "scroll", handleScroll);
@@ -28,11 +27,11 @@ const Footer = () => {
     },[])
 
     return(
-        <footer className={`bg-green ${animation}`} id="contact" >
-            <div className={`block sm:hidden ${animation}`} ref={footerRef}>
+        <footer className={`bg-green z-5`} id="contact"  ref={footerRef}>
+            <div className={`block sm:hidden ${animation}`}>
                 <h1 className="text-4xl text-semibold leading-loose mx-8 px-4 pt-4" >Contacto</h1>
                 <Contact/>
-                <aside className="mt-10 px-10 w-full text-center">
+                <aside className={`mt-10 px-10 w-full text-center ${animation}`}>
                     <span className="my-10">
                         <p>500 Terry Francois Street</p>
                         <p>San Francisco, CA 94158</p>
@@ -51,7 +50,7 @@ const Footer = () => {
                     <p className="mt-5 py-10">© 2023 by Personal Life Coach</p>
                 </aside>
             </div>
-            <div className="hidden sm:flex justify-around pb-8">
+            <div className={`hidden sm:flex justify-around pb-4 ${animation}`}>
                 <aside className="my-10 px-10 w-1/3">
                 <h1 className="text-4xl text-semibold leading-loose">Contacto</h1>
                     <span className="my-10">
@@ -64,10 +63,10 @@ const Footer = () => {
                     </span>
                     <p className="my-10">info@colmena.com</p>
                     <aside className="flex">
-                    <FaFacebook color="#EA6510" className="mr-3 text-4xl"/>
-                    <FaInstagram color="#EA6510" className="mr-3 text-4xl"/>
-                    <FaLinkedin color="#EA6510" className="mr-3 text-4xl"/>
-                    <FaTiktok color="#EA6510" className="mr-3 text-4xl"/>
+                    <FaFacebook className="mr-3 text-4xl"/>
+                    <FaInstagram className="mr-3 text-4xl"/>
+                    <FaLinkedin className="mr-3 text-4xl"/>
+                    <FaTiktok className="mr-3 text-4xl"/>
                     </aside>
                     <p className="my-10">© 2023 by Personal Life Coach</p>
                 </aside>

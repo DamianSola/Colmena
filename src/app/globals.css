@@ -6,33 +6,33 @@ html{
   scroll-behavior: smooth;
 }
 
-@keyframes fadeInLeft {
+@keyframes fadeInTop {
   0% {
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateY(-200px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
-@keyframes fadeInRight {
+@keyframes fadeInBottom {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateY(200px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
-.fade-in-left {
-  animation: fadeInLeft 0.9s ease-out;
+.fade-in-top {
+  animation: fadeInTop 0.9s ease-out;
 }
 
-.fade-in-right {
-  animation: fadeInRight 0.9s ease-out;
+.fade-in-bottom {
+  animation: fadeInBottom 0.9s ease-out;
 }
 
 

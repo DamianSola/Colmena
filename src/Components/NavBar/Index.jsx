@@ -18,7 +18,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white fixed w-full z-20">
+    <nav className="bg-white fixed w-full z-20 fade-in-top">
       <div className="w-full mx-auto px-4 sm:px-6 lg:pl-24 sticky z-auto">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">

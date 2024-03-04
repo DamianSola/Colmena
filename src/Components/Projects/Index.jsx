@@ -17,7 +17,7 @@ const Project = () => {
 
             const {y} = div.getBoundingClientRect();
 
-            if(y  > -280 && y < 400) setProject('mostrar')
+            if(y  > -1600 && y < 400) setProject('mostrar')
             // else setProject( 'ocultar')
 
         }
@@ -34,7 +34,7 @@ const Project = () => {
                 <div className={`hidden md:block  ${project}`} >
                 <Carousel slides={projects} />
                 </div>
-                <div className="flex-col md:hidden">
+                <div className={`flex-col md:hidden ${project}`} >
                     {projects && projects.map((e,i) => {
                         return <div className="sm:w-full h-50 m-2 text-center transition items-center duration-500 transform brightness-30" key={i}>
                             <img src={e.imagen} className="w-full brightness-50"/>

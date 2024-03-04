@@ -18,7 +18,7 @@ const Description = () =>{
 
             const {y} = div.getBoundingClientRect();
 
-            if(y  > -280 && y < 400) setAnimation('mostrar')
+            if(y  > -280 && y < 500) setAnimation('mostrar')
             // else setAnimation( 'ocultar')
 
         }
@@ -31,12 +31,12 @@ const Description = () =>{
     },[])
   
     return(
-        <div className="bg-white">
-            <div  className={`hidden md:block pt-20  w-full mx-auto px-4 sm:px-6 lg:px-24 ${animation}`} ref={aboutRef} id="about">
+        <div className="bg-white" id="about">
+            <div  className={`hidden md:block pt-20  w-full mx-auto px-4 sm:px-6 lg:px-24 ${animation}`} ref={aboutRef} >
                     <h1 className={`text-left text-4xl font-medium mb-5 tracking-wider`} >{description.title}</h1>
                 <div className="flex gap-8" >
                     <div className="w-2/4 ">
-                        <p className='lead text-left text-2xl font-medium leading-relaxed ' >
+                        <p className={`lead text-left text-2xl font-medium leading-relaxed`} >
                             {description.desc}
                         </p>
                     </div>
@@ -45,7 +45,7 @@ const Description = () =>{
                     </aside>
                 </div>
             </div>
-            <div className="md:hidden flex-col bg-white w-auto text-center ">
+            <div className={`md:hidden flex-col bg-white w-auto text-center ${animation}`}>
                 <h1 className="text-center text-4xl font-medium mx-8 py-10 tracking-wider" >{description.title}</h1>
                 <aside className="flex w-full justify-center items-center px-4">
                     <img src={foto} width="500" alt="descripcion" />

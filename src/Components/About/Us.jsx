@@ -35,8 +35,26 @@ const Us = () => {
 
 const Profile = ({description,name,image,index}) =>{
 
+    const  [animation, setAnimation] = useState("ocultar")
+    const usRef = useRef()
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const div = usRef.current;
+            const {y} = div.getBoundingClientRect();
+            if(y  > -280 && y < 500) setAnimation('mostrar')
+
+        }
+
+        window.addEventListener( "scroll", handleScroll);
+    
+        return () => window.removeEventListener( "scroll", handleScroll)
+
+
+    },[])
+
     return(
-        <div className={`${index%2 === 0? 'bg-orange': "bg-green"  }` } >
+        <div className={`${index%2 === 0? 'bg-orange': "bg-greenlight"  } ${animation}` } ref={usRef} >
         <img src={image} width="500" height="500" className="mx-auto" alt="foto-perfil"/>
         <h2 className="text-left mx-6 text-4xl max-widht-4/5 font-medium mt-6">
             {name}
@@ -54,25 +72,15 @@ const Profile = ({description,name,image,index}) =>{
 const Profile2 = ({description,name,image,index}) => {
 
     const  [animation, setAnimation] = useState("ocultar")
-    // const [animat2, setAnimat2] = useState("ocultar-rigth")
 
     const usRef = useRef()
-    // const otherRef = useRef()
-
+  
 
     useEffect(() => {
         const handleScroll = () => {
             const div = usRef.current;
-            // const otherDiv = otherRef.current;
-
             const {y} = div.getBoundingClientRect();
-            // const otherY = otherDiv.getBoundingClientRect().y
-
-            if(y  > -280 && y < 400) setAnimation('mostrar')
-            // else setAnimation( 'ocultar')
-
-            // if(otherY  > -280 && otherY < 400) setAnimat2('mostrar')
-            // setAnimat2('ocultar-rigth')
+            if(y  > -280 && y < 500) setAnimation('mostrar')
 
         }
 
