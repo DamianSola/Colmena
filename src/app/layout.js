@@ -1,5 +1,7 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/Components/NavBar/Index";
+import Footer from "@/Components/Footer/Index";
 
 
 const raleway = Raleway({ subsets: ["latin"] });
@@ -17,7 +19,9 @@ export default function RootLayout({ children }) {
       <head>
       </head>
       <body className={raleway.className} >
+        <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

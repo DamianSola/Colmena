@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link  href="/">
-            <Image src={logo} width='200' alt="colmena-logo" />
+            <Image src={logo} width='200' alt="colmena-logo" priority="true"/>
             </Link>
           </div>
 

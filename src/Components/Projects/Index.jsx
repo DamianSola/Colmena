@@ -14,6 +14,8 @@ const Project = () => {
        
         const handleScroll = () => {
             const div = divRef.current;
+            
+            // console.log(div.getBoundingClientRect().y)
 
             const {y} = div.getBoundingClientRect();
 

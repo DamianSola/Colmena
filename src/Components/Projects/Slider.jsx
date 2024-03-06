@@ -2,6 +2,7 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
 
 
 // Import Swiper styles
@@ -35,13 +36,12 @@ export default function App({slides}) {
       >
         {slides.map((e,i) => {
             return <SwiperSlide key={i} >
-
+              <Link href={`/Project/${e.id}`} >
                 <img src={e.imagen} />
+              </Link>
                 <span>
                   <h1>{e.nombre}</h1>
                 </span>
-                {/* <div style={{backgroundImage: 'url(' + e.imagen + ')'}} width="400">
-              </div> */}
             </SwiperSlide>
         })}
       </Swiper>
