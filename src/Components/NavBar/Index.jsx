@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 
 const LinkItems = [  
-    {link:"Inicio", linkRef:"#"},
+    {link:"Inicio", linkRef:"/"},
     {link:"Nosotros", linkRef:"#about"},
     {link:"Proyectos", linkRef:"#projects"},
     {link:"Contacto", linkRef:"#contact"},

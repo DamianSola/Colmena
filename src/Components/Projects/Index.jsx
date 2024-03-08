@@ -17,7 +17,8 @@ const Project = () => {
             
             // console.log(div.getBoundingClientRect().y)
 
-            const {y} = div.getBoundingClientRect();
+            // const {y} = div.getBoundingClientRect();
+            const y = div ? div.getBoundingClientRect().y : null
 
             if(y  > -1600 && y < 400) setProject('mostrar')
             // else setProject( 'ocultar')

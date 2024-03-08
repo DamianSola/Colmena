@@ -41,7 +41,8 @@ const Profile = ({description,name,image,index}) =>{
     useEffect(() => {
         const handleScroll = () => {
             const div = usRef.current;
-            const {y} = div.getBoundingClientRect();
+            // const {y} = div.getBoundingClientRect();
+            const y = div ? div.getBoundingClientRect().y : null
             if(y  > -280 && y < 500) setAnimation('mostrar')
 
         }
@@ -79,7 +80,8 @@ const Profile2 = ({description,name,image,index}) => {
     useEffect(() => {
         const handleScroll = () => {
             const div = usRef.current;
-            const {y} = div.getBoundingClientRect();
+            // const {y} = div.getBoundingClientRect();
+            const y = div ? div.getBoundingClientRect().y : null
             if(y  > -280 && y < 500) setAnimation('mostrar')
 
         }
