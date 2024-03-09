@@ -13,15 +13,14 @@ const Modal = ({image, open,imgI, close, next, prev}) => {
     }, [])
 
     return(
-        <div className={`${open? "block" : "hidden"} z-50 fixed top-0 p-4 bg-[0000]`}>
-            <div className="bg-black p-2 w-9/10">
-
-            <button onClick={close} className="opacity-40 hover:opacity-100 text-4xl absolute text-white right-6 top-3">x</button>
-            <img src={image} alt={`image-${imgI}`} className="m-auto w-4/5 h-full m-4 "/>
-            <span className="absolute m-auto bottom-5 justify-between">
-                <button className="opacity-40 hover:opacity-100 text-7xl text-white p-4" onClick={prev}>{'<'}</button>
-                <button className="opacity-40 hover:opacity-100 text-7xl text-white p-4" onClick={next}>{'>'}</button>
-            </span>
+        <div className={`${open? "block" : "hidden"}`}>
+            <div className="bg-black w-8/10 z-50 fixed top-0 p-4 md:h-full w-full rounded-sm">
+            <button onClick={close} className="opacity-40 hover:opacity-100 text-4xl absolute text-white right-6 top-1 font-light">x</button>
+            <div className="flex md:h-full">
+                <button className=" opacity-40 left-0 hover:opacity-100 text-4xl font-extralight text-white md:m-2" onClick={prev}>{'<'}</button>
+            <img src={image} alt={`image-${imgI}`} className="m-auto w-4/5"/>
+                <button className=" opacity-40 right-0 hover:opacity-100 text-4xl font-extralight text-white md:m-2" onClick={next}>{'>'}</button>
+            </div>
             </div>
         </div>
     )

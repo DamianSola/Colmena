@@ -20,7 +20,6 @@ const projectExemple = {
 const ProjectId = ({id}) => {
 
     const project = Projects.find(p => p.id == id);
-    // console.log(project)
     
     const {images} = projectExemple;
     
@@ -46,11 +45,7 @@ const ProjectId = ({id}) => {
             <h1 className="m-4 py-4 text-xl">{project.nombre}</h1>
             <p className='m-4'>{project.descripcion}</p>
             <div className='flex m-4 bg-black text-white' >
-            {/* <button onClick={handlePrev} className='hidden md:block'>Prev</button>
-            <img src={images[currentImageIndex]} alt={`Image ${currentImageIndex}`} className='w-3/4 md:h-screen m-auto'/>
-            <button onClick={handleNext} className='hidden md:block'>Next</button> */}
             </div>
-            {/* <button>open modal</button> */}
             <Modal image={images[currentImageIndex]} 
                 imgI={currentImageIndex} 
                 open={open}  
@@ -58,12 +53,11 @@ const ProjectId = ({id}) => {
                 next={handleNext}
                 prev= {handlePrev}
                 />
-
-            <ul className="grid grid-cols-3 gap-4 m-4">
+            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 m-4">
                 {images.map((img, index) => {
-                    return <li className="flex m-2" key={index}>
+                    return <li className="flex md:m-2" key={index}>
                         <span onClick={() => handleClick(index)} className='hover:opacity-80 cursor-pointer'>
-                                <img src={img} alt={`Image ${index+1}`} className="w-full h-fit	 object-cover"/>
+                                <img src={img} alt={`Image ${index+1}`} className="w-full h-fit	"/>
                         </span>
                     </li>
                     })
@@ -74,14 +68,3 @@ const ProjectId = ({id}) => {
 }
 export default ProjectId;
 
-
-{/* <div className="grid grid-cols-3 gap-4">
-        {images.map((image, index) => (
-          <div key={index} className="relative group">
-            <img src={image.url} alt={image.alt} className="w-full h-auto" />
-            <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity flex items-center justify-center">
-              <p className="text-white">Descripción de la imagen</p>
-            </div>
-          </div>
-        ))}
-      </div> */}
