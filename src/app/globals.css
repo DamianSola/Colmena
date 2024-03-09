@@ -39,7 +39,7 @@ html{
 .ocultar{
   transform: translateY(100px);
   opacity:  0;
-  transition: all 1.2s ease-out;
+  transition: all 1.5s ;
 }
 
 .ocultar-rigth{
@@ -52,12 +52,12 @@ html{
   /* transform: scale(1); */
   transform: translateY(0);
   opacity:  1;
-  transition: all 1.2s ease-out;
+  transition: all 1.5s ;
 }
 
 .footer-hidden{
   opacity:  0;
-  transition: all 1.2s ease-out;
+  transition: all 1.5s ease-out;
 
 }
 

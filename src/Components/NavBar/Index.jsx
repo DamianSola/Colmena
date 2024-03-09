@@ -1,5 +1,5 @@
 'use client';
-import logo from "./colmena.png"
+import logo from "./LogoColmena.png"
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
@@ -8,9 +8,9 @@ import React, { useState } from 'react';
 
 const LinkItems = [  
     {link:"Inicio", linkRef:"/"},
-    {link:"Nosotros", linkRef:"#about"},
-    {link:"Proyectos", linkRef:"#projects"},
-    {link:"Contacto", linkRef:"#contact"},
+    {link:"Nosotros", linkRef:"/#about"},
+    {link:"Proyectos", linkRef:"/#projects"},
+    {link:"Contacto", linkRef:"/#contact"},
 ]
 
 

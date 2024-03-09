@@ -28,7 +28,7 @@ const Project = () => {
 
     return(
         <div className="bg-white p-4 lg:px-24 lg:py-20 " id="projects">         
-                <h1 className={`text-left text-4xl font-medium mx-1 pb-8 tracking-wider ${project}`} ref={divRef}>PROYECTOS</h1>
+                <h1 className={`text-left text-4xl font-medium mx-1 pb-8 tracking-wider ${project}`} ref={divRef}>Proyectos</h1>
                 <div className={`hidden md:block  ${project}`} >
                 <Carousel slides={projects} />
                 </div>
