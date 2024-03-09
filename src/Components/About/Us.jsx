@@ -1,32 +1,23 @@
 import { ReadMore } from "../Button"
-import React, {useState,useRef, useEffect} from "react"
-const { default: Image } = require("next/image")
+import React, {useState,useRef, useEffect} from "react";
+import About from "./About.json" 
+const { default: Image } = require("next/image");
 
-const people = [
-    {
-        name: "Simon Perez",
-        image: "https://kioskobox.com/wp-content/uploads/2023/09/Fotos-de-perfil-profesional.jpg",
-        description: "Claire joins Chestnut Park Real Estate Ltd. with 15 years of experience helping clients buy and sell luxury real estate in central Toronto neighbourhoods. From first-time homebuyers to growing families, Claire specializes in helping each and every one of her clients assess their unique needs. She is a great listener, strong negotiator, and truly enjoys building lasting relationships with her clients. "
-    },
-    {
-        name: "Marcos Ramirez",
-        image: "https://kioskobox.com/wp-content/uploads/2023/09/Fotos-de-perfil-profesional.jpg",
-        description: "Claire joins Chestnut Park Real Estate Ltd. with 15 years of experience helping clients buy and sell luxury real estate in central Toronto neighbourhoods. From first-time homebuyers to growing families, Claire specializes in helping each and every one of her clients assess their unique needs. She is a great listener, strong negotiator, and truly enjoys building lasting relationships with her clients. "
-    }
-]
 
 const Us = () => {
+
+    const {people} = About
     
     return(
         <div className="bg-white justify-center w-full ">
             <div className="block md:hidden">
                 {people.map((e,i) => {
-                    return <Profile key={i}  index={i} description={e.description} image={e.image} name={e.name} />
+                    return <Profile key={i}  index={i} description={e.bio} image={e.image} name={e.name} />
                 })}
             </div>
             <div className={`hidden md:block justify-center`} > 
             {people.map((e,i) => {
-                    return <Profile2 key={i} index={i} description={e.description} image={e.image} name={e.name} />
+                    return <Profile2 key={i} index={i} description={e.bio} image={e.image} name={e.name} />
                 })}
             </div>
         </div>
@@ -36,12 +27,13 @@ const Us = () => {
 const Profile = ({description,name,image,index}) =>{
 
     const  [animation, setAnimation] = useState("ocultar")
+    const [readMore, setReadMore] = useState(false);
+
     const usRef = useRef()
 
     useEffect(() => {
         const handleScroll = () => {
             const div = usRef.current;
-            // const {y} = div.getBoundingClientRect();
             const y = div ? div.getBoundingClientRect().y : null
             if(y  > -280 && y < 500) setAnimation('mostrar')
 
@@ -50,8 +42,6 @@ const Profile = ({description,name,image,index}) =>{
         window.addEventListener( "scroll", handleScroll);
     
         return () => window.removeEventListener( "scroll", handleScroll)
-
-
     },[])
 
     return(
@@ -61,18 +51,19 @@ const Profile = ({description,name,image,index}) =>{
             {name}
         </h2>
         <p className="plead mx-6 mt-5 pb-5 text-left max-widht-4/5 text-base font-medium leading-relaxed">
-            {description}
+            {readMore? description : description.slice(0,500)+"..."}                
         </p>
-        {/* <ReadMore/> */}
+        <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/>
     </div>
     )
 }
 
 
 
-const Profile2 = ({description,name,image,index}) => {
+const Profile2 = ({description, name,image,index}) => {
 
-    const  [animation, setAnimation] = useState("ocultar")
+    const  [animation, setAnimation] = useState("ocultar");
+    const [readMore, setReadMore] = useState(false);
 
     const usRef = useRef()
   
@@ -80,50 +71,48 @@ const Profile2 = ({description,name,image,index}) => {
     useEffect(() => {
         const handleScroll = () => {
             const div = usRef.current;
-            // const {y} = div.getBoundingClientRect();
             const y = div ? div.getBoundingClientRect().y : null
             if(y  > -280 && y < 500) setAnimation('mostrar')
-
         }
 
         window.addEventListener( "scroll", handleScroll);
-    
         return () => window.removeEventListener( "scroll", handleScroll)
-
-
     },[])
+
 
     if(index%2 === 0){
         return(
-            <div className={`flex bg-orangeLight lg:w-full w-4/5 m-auto ${animation}`}  ref={usRef}>
-            <img src={image} className="w-2/4" alt="foto-perfil"/>
-            <aside className="flex-col w-2/4 justify-center items-start mx-8 pl-16"> : 
+            <div className={`flex bg-orangeLight lg:w-full w-4/5 m-auto ${animation} `}  ref={usRef}>
+            <div className="w-1/2 justify-center  items-center self-center">
+            <img src={image} className="w-full h-auto m-auto" alt="foto-perfil"/>
+            </div>
+            <aside className="flex-col flex-1 w-2/4 justify-center items-start pl-16 pr-8"> : 
                 <h2 className="text-left text-4xl font-medium">
                     {name}
                 </h2>
                 <p className="plead my-4 text-left text-base font-medium leading-relaxed">
-                {description.slice(0, 150)}                
+                {readMore? description : description.slice(0,550)+"..."}                
                 </p>
-                <ReadMore/>
+                <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/>
             </aside>
         </div>
         )
     }
 
-    // ${animation === "ocultar" ? "ocultar-rigth" : animation}
-
     return(
     <div className={`flex bg-greenlight lg:w-full w-4/5 m-auto ${animation}`} ref={usRef}>
-            <aside className="flex-col  justify-center items-start mx-8 pl-16"> : 
+            <aside className="flex-col w-1/2 justify-center items-start pl-24 pr-8"> : 
                 <h2 className="text-left text-4xl font-medium">
                     {name}
                 </h2>
                 <p className="plead my-4 text-left text-base font-medium leading-relaxed">
-                {description.slice(0, 150)}                
+                {readMore? description : description.slice(0,550)+"..."}                
                 </p>
-                <ReadMore/>
+                <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/>
             </aside>
-            <img src={image} className="w-2/4" alt="foto-perfil"/>
+            <div className="w-1/2 items-center self-center">
+            <img src={image} className="w-full" alt="foto-perfil"/>
+            </div>
     </div>
     )
      

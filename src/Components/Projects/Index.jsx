@@ -2,6 +2,7 @@
 import projects from "./Projects"
 import Carousel from "./Slider"
 import React, { useEffect, useRef, useState } from 'react';
+import Link from "next/link";
 
 
 const Project = () => {
@@ -14,15 +15,9 @@ const Project = () => {
        
         const handleScroll = () => {
             const div = divRef.current;
-            
-            // console.log(div.getBoundingClientRect().y)
-
-            // const {y} = div.getBoundingClientRect();
             const y = div ? div.getBoundingClientRect().y : null
 
             if(y  > -1600 && y < 400) setProject('mostrar')
-            // else setProject( 'ocultar')
-
         }
 
         window.addEventListener( "scroll", handleScroll);
@@ -40,8 +35,10 @@ const Project = () => {
                 <div className={`flex-col md:hidden ${project}`} >
                     {projects && projects.map((e,i) => {
                         return <div className="sm:w-full h-50 m-2 text-center transition items-center duration-500 transform brightness-30" key={i}>
-                            <img src={e.imagen} className="w-full brightness-50"/>
-                            <p className="absolute top-0 text-white p-8 text-2xl border-white w-full">{e.nombre}</p>
+                            <Link href={`/Project/${e.id} `} >
+                                <img src={e.imagen} className="w-full brightness-50"/>
+                            </Link>
+                                <p className="absolute top-0 text-white p-8 text-2xl border-white w-full">{e.nombre}</p>
                         </div>
 
                     })}

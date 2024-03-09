@@ -9,8 +9,9 @@ const foto = "https://img.freepik.com/free-photo/bright-shot-new-buildings-neigh
 
 const Description = () =>{
 
-    const {description, title} = About;
+    const {description, description2, title} = About;
     const  [animation, setAnimation] = useState("ocultar")
+    const [readMore, setReadMore] = useState(false)
     const aboutRef = useRef()
 
 
@@ -31,6 +32,10 @@ const Description = () =>{
 
 
     },[])
+
+    const handleClick = () => {
+        setReadMore(!readMore)
+    }
   
     return(
         <div className="bg-white" id="about">
@@ -46,6 +51,8 @@ const Description = () =>{
                         <img  src={foto} alt="descripcion" />
                     </aside>
                 </div>
+                <p className={`${readMore? "blox" : "hidden"} lead text-left text-2xl font-medium leading-relaxed `}>{description2}</p>
+                        <ReadMore  readMore={readMore}  setRead={handleClick} />
             </div>
             <div className={`md:hidden flex-col bg-white w-auto text-center ${animation}`}>
                 <h1 className="text-center text-4xl font-medium mx-8 py-10 tracking-wider" >{title}</h1>
