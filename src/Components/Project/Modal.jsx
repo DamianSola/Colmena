@@ -19,7 +19,7 @@ const Modal = ({image, open,imgI, close, next, prev}) => {
             <div className="flex md:h-full">
                 <button className=" opacity-40 left-0 hover:opacity-100 text-4xl font-extralight text-white md:m-2" onClick={prev}>{'<'}</button>
             <img src={image} alt={`image-${imgI}`} className="m-auto w-4/5"/>
-                <button className=" opacity-40 right-0 hover:opacity-100 text-4xl font-extralight text-white md:m-2" onClick={next}>{'>'}</button>
+                <button className=" opacity-40 my-12 right-0 hover:opacity-100 text-4xl font-extralight text-white md:m-2" onClick={next}>{'>'}</button>
             </div>
             </div>
         </div>
