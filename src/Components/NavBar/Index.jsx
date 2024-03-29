@@ -30,7 +30,7 @@ const Navbar = () => {
           {/* //Tablet y Desktop */}
           {/* //TODO: SI HAY TIEMPO AGREGAR SUBRAYADO DINAMICO */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+            <div className="mx-10 flex items-baseline space-x-4">
               {LinkItems.map(l => {
                 return <Link key={l.link} className="text-black hover:text-green rounded-none delay-75 hover:border-b px-5 py-0 rounded-md text-base font-medium" href={l.linkRef} >{l.link}</Link>
               }

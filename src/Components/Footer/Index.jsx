@@ -51,7 +51,7 @@ const Footer = () => {
                 </aside>
             </div>
             <div className={`hidden sm:flex justify-around pb-4 ${animation}`}>
-                <aside className="my-10 px-10 w-1/3">
+                <aside className="px-14 py-10 w-1/3">
                 <h1 className="text-4xl text-semibold leading-loose">Contacto</h1>
                     <span className="my-10">
                         <p>500 Terry Francois Street</p>

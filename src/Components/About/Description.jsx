@@ -62,6 +62,8 @@ const Description = () =>{
                 <p className='lead mx-6 sm:mx-10 mt-5 text-justify text-base font-medium leading-relaxed'>
                     {description}
                 </p>
+                <p className={`${readMore? "blox" : "hidden"} lead mx-6 sm:mx-10 text-justify text-base font-medium leading-relaxed `}>{description2}</p>
+                    <ReadMore  readMore={readMore}  setRead={handleClick} />
             </div>
         </div>
     )
