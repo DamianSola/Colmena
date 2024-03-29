@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white fixed w-full z-20 fade-in-top">
-      <div className="w-full mx-auto px-4 sm:px-6 lg:pl-24 sticky z-auto">
+      <div className="w-full mx-auto  sm:px-6 lg:pl-24 sticky z-auto">
         <div className="flex items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link  href="/">
@@ -29,10 +29,10 @@ const Navbar = () => {
 
           {/* //Tablet y Desktop */}
           {/* //TODO: SI HAY TIEMPO AGREGAR SUBRAYADO DINAMICO */}
-          <div className="hidden md:block">
-            <div className="mx-10 flex items-baseline space-x-4">
+          <div className="hidden md:block px-16">
+            <div className="flex items-baseline space-x-4">
               {LinkItems.map(l => {
-                return <Link key={l.link} className="text-black hover:text-green rounded-none delay-75 hover:border-b px-5 py-0 rounded-md text-base font-medium" href={l.linkRef} >{l.link}</Link>
+                return <Link key={l.link} className="text-black hover:text-green rounded-none delay-75 hover:border-b px-4 py-0 rounded-md text-base font-medium" href={l.linkRef} >{l.link}</Link>
               }
               )}
             </div>
