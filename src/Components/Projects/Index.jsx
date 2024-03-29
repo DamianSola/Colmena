@@ -28,13 +28,13 @@ const Project = () => {
 
     return(
         <div className="bg-white p-4 lg:px-24 lg:py-20 " id="projects">         
-                <h1 className={`text-left text-4xl font-medium mx-1 pb-8 tracking-wider ${project}`} ref={divRef}>Proyectos</h1>
+                <h1 className={`text-left text-4xl font-medium mx-1 md:pb-8  tracking-wider ${project}`} ref={divRef}>Proyectos</h1>
                 <div className={`hidden md:block  ${project}`} >
                 <Carousel slides={projects} />
                 </div>
                 <div className={`flex-col md:hidden ${project}`} >
                     {projects && projects.map((e,i) => {
-                        return <div className="sm:w-full h-50 m-2 text-center transition items-center duration-500 transform brightness-30" key={i}>
+                        return <div className="sm:w-full h-50 px-2 py-4 text-center transition items-center duration-500 transform brightness-30" key={i}>
                             <Link href={`/Project/${e.id} `} >
                                 <img src={e.imagen} className="w-full brightness-50"/>
                             </Link>

@@ -19,8 +19,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white fixed w-full z-20 fade-in-top">
-      <div className="w-full mx-auto  sm:px-6 lg:pl-24 sticky z-auto">
-        <div className="flex items-center justify-between h-20">
+      <div className="w-full mx-auto sm:px-6 lg:pl-24 sticky z-auto">
+        <div className="flex px-5 items-center justify-between h-20">
           <div className="flex-shrink-0">
             <Link  href="/">
             <Image src={logo} width='200' alt="colmena-logo" priority="true"/>
@@ -37,8 +37,8 @@ const Navbar = () => {
               )}
             </div>
           </div>
-          <div className="mr-2 flex md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center p-2 rounded-md text-grey focus:outline-none focus:bg-gray-700 focus:text-white">
+          <div className="flex md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)} type="button" className="inline-flex items-center justify-center rounded-md text-grey focus:outline-none focus:bg-gray-700 focus:text-white">
               <svg className={`${isOpen ? 'hidden' : 'block'} h-6 w-6`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 6h16M4 12h16m-16 6h16" />
               </svg>

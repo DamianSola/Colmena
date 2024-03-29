@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const Home = () => {
     return (
-        <div className="bg-black bg-opacity-50 h-dvh sm:h-screen text-center flex justify-center flex-col" id="home">
+        <div className="bg-black bg-opacity-50 ms:h-dvh sm:h-screen text-center flex justify-center flex-col" id="home">
             <div className="flex-col py-20 items-center text-center text-white pt-40 fade-in-bottom">
                 <Image src={LogoBlanco} className="m-auto" width="900" alt="colmena-espacio+comunidad"/>
                 {/* <h1 className="text-6xl md:text-8xl lg:text-9xl py-2 tracking-widest">Colmena</h1> */}

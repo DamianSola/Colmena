@@ -14,7 +14,7 @@ import React, { useEffect } from 'react';
 export default function Home() {
   
   return (
-    <main className="bg-[url('https://www.shutterstock.com/image-photo/head-shot-portrait-happy-bearded-600nw-1740774431.jpg')] bg-cover bg-fixed min-h-screen flex-col items-center justify-between font-medium">
+    <main className="bg-[url('https://www.shutterstock.com/image-photo/head-shot-portrait-happy-bearded-600nw-1740774431.jpg')] bg-no-repeat bg-top bg-cover bg-fixed md:min-h-screen flex-col items-center justify-between font-medium">
       <Landing/>
       <Description />
       <Project/>

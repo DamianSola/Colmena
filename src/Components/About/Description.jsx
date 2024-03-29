@@ -54,8 +54,8 @@ const Description = () =>{
                 <p className={`${readMore? "blox" : "hidden"} lead text-left text-2xl font-medium leading-relaxed `}>{description2}</p>
                         <ReadMore  readMore={readMore}  setRead={handleClick} />
             </div>
-            <div className={`md:hidden flex-col bg-white w-auto text-center ${animation}`}>
-                <h1 className="text-center text-4xl font-medium mx-8 py-10 tracking-wider" >{title}</h1>
+            <div className={`md:hidden flex-col bg-white w-auto pt-4 text-center ${animation}`}>
+                <h1 className="text-justify text-3xl font-medium py-6 px-4 tracking-wider" >{title}</h1>
                 <aside className="flex w-full justify-center items-center px-4">
                     <img src={foto} width="500" alt="descripcion" />
                 </aside>
