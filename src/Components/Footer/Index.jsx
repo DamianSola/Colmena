@@ -2,11 +2,14 @@
 import Contact from "./Contact";
 import { FaFacebook, FaHeart, FaInstagram, FaLinkedin, FaTiktok } from 'react-icons/fa';
 import React, { useState, useEffect, useRef } from "react";
+import dataContact from "contact.json"
 
 const Footer = () => {
 
     const  [animation, setAnimation] = useState("footer-hidden")
     const footerRef = useRef()
+
+    console.log(dataContact)
 
 
     useEffect(() => {
@@ -68,7 +71,7 @@ const Footer = () => {
                     <FaLinkedin className="mr-3 text-4xl"/>
                     <FaTiktok className="mr-3 text-4xl"/>
                     </aside>
-                    <p className="my-10">© 2023 by Personal Life Coach</p>
+                    <p className="my-10">© 2023 by damiansola.net</p>
                 </aside>
                 <Contact/>
             </div>
