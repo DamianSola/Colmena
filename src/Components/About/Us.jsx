@@ -2,22 +2,42 @@ import { ReadMore } from "../Button"
 import React, {useState,useRef, useEffect} from "react";
 import About from "./About.json" 
 const { default: Image } = require("next/image");
+import fotoGuille from "./FOTOGUILLE.jpg";
+import fotoMateo from "./FOTOMATEO.jpg";
 
 
 const Us = () => {
 
-    const {people} = About
+    // Nuevas imágenes
+    const nuevasImagenes = {
+    "Mateo Lanusse": fotoMateo,
+    "Guillermo Gómez Bustillos": fotoGuille
+    };
+
+// Reemplazar las imágenes
+    const {people} = About;
+
+    useEffect(() => {
+         About.people.forEach(person => {
+            if (nuevasImagenes[person.name]) {
+                person.image = nuevasImagenes[person.name];
+            }
+        });
+        // console.log(people);
+        
+    },[])
+
     
     return(
         <div className="bg-white justify-center w-full ">
             <div className="block md:hidden">
                 {people.map((e,i) => {
-                    return <Profile key={i}  index={i} description={e.bio} image={e.image} name={e.name} />
+                    return <Profile key={i}  index={i} description={e.bio} image={e.image.src} name={e.name} />
                 })}
             </div>
             <div className={`hidden md:block justify-center`} > 
             {people.map((e,i) => {
-                    return <Profile2 key={i} index={i} description={e.bio} image={e.image} name={e.name} />
+                    return <Profile2 key={i} index={i} description={e.bio} image={e.image.src} name={e.name} />
                 })}
             </div>
         </div>
@@ -28,6 +48,8 @@ const Profile = ({description,name,image,index}) =>{
 
     const  [animation, setAnimation] = useState("ocultar")
     const [readMore, setReadMore] = useState(false);
+
+    console.log(image)
 
     const usRef = useRef()
 
