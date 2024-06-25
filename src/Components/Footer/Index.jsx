@@ -36,7 +36,7 @@ const Footer = () => {
                 <Contact/>
                 <aside className={`mt-10 px-10 w-full text-center ${animation}`}>
                     <span className="my-10">
-                        <p>Alsina 728 - 2DO piso - Dpto 'I'</p>
+                        <p>{"Alsina 728 - 2DO piso - Dpto 'I'"}</p>
                         <p>Salta 4400</p>
                     </span>
                     <span className="my-10">
@@ -61,7 +61,7 @@ const Footer = () => {
                 <aside className="px-14 py-10 w-1/3">
                 <h1 className="text-4xl text-semibold leading-loose">Contacto</h1>
                     <span className="my-10">
-                        <p>Alsina 728 - 2DO piso - Dpto 'I'</p>
+                        <p>{"Alsina 728 - 2DO piso - Dpto 'I'"}</p>
                         <p>Salta 4400</p>
                     </span>
                     <span className="my-10">
