@@ -16,36 +16,5 @@
       "nombre": "Urbanización Vista Verde",
       "descripcion": "Desarrollo residencial en un entorno natural con amplias zonas verdes, senderos y lagos artificiales.",
       "imagen": "https://estudioitem.files.wordpress.com/2023/01/whatsapp-image-2023-01-26-at-19.45.15-2.jpeg"
-    },
-    {
-      "id": 4,
-      "nombre": "Condominio Los Robles",
-      "descripcion": "Conjunto de condominios exclusivos con instalaciones recreativas y seguridad 24/7.",
-      "imagen": "https://estudioitem.files.wordpress.com/2023/01/whatsapp-image-2023-01-26-at-19.45.17.jpeg"
-    },
-    {
-      "id": 5,
-      "nombre": "Paseo del Río",
-      "descripcion": "Proyecto de desarrollo inmobiliario junto al río, con acceso a áreas de recreación y entretenimiento.",
-      "imagen": "https://estudioitem.files.wordpress.com/2023/01/whatsapp-image-2023-01-26-at-19.45.17-1.jpeg"
-    },
-    {
-      "id": 6,
-      "nombre": "Parque Residencial Bella Vista",
-      "descripcion": "Urbanización planificada con viviendas modernas y áreas comunes bien equipadas para la familia.",
-      "imagen": "https://estudioitem.files.wordpress.com/2023/04/dji_0563-1.jpg"
-    },
-    {
-      "id": 7,
-      "nombre": "Ciudad Jardín",
-      "descripcion": "Comunidad sostenible con amplias zonas verdes, huertos urbanos y opciones de movilidad ecológica.",
-      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnZck6tSq0mzmPwjeRQKepeCww_8PsC5Vnzqj4Az-xOl88rP1Kbsu59yGPeI255JsV75Q&usqp=CAU"
-    },
-    {
-      "id": 8,
-      "nombre": "Conjunto Residencial Primavera",
-      "descripcion": "Conjunto de viviendas multifamiliares con áreas de recreación y acceso a servicios cercanos.",
-      "imagen": "https://webbox.imgix.net/images/rynrldfczrupjkat/7533387e-a54a-4e6a-b8d2-970691a8d46d.png?auto=format,compress&fit=crop&crop=entropy&w=375&h=280&q=55"
     }
   ]
-  
