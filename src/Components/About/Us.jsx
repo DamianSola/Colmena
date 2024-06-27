@@ -2,8 +2,8 @@ import { ReadMore } from "../Button"
 import React, {useState,useRef, useEffect} from "react";
 import About from "./About.json" 
 const { default: Image } = require("next/image");
-import fotoGuille from "./FOTOGUILLE.jpg";
-import fotoMateo from "./FOTOMATEO.jpg";
+// import fotoGuille from "./FOTOGUILLE.jpg";
+// import fotoMateo from "./FOTOMATEO.jpg";
 
 
 const Us = () => {

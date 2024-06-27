@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Projects from '../Projects/Projects.json';
 import Modal from './Modal';
+import { getOneDevelopment } from '@/db/db';
 
 
 
@@ -17,9 +18,10 @@ const projectExemple = {
 ], 
 }
 
-const ProjectId = ({id}) => {
+const ProjectId = ({nombre}) => {
 
-    const project = Projects.find(p => p.id == id);
+    // const project = Projects.find(p => p.nombre == nombre);
+    const project = getOneDevelopment(nombre)
     
     const {images} = projectExemple;
     

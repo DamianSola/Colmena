@@ -1,0 +1,98 @@
+[{
+  "_id": {
+    "$oid": "667acb5d7d391ca1fc842242"
+  },
+  " name": "cocina",
+  "logo": "https://cdn-icons-png.flaticon.com/512/5418/5418337.png"
+},
+{
+  "_id": {
+    "$oid": "667acbee7d391ca1fc842243"
+  },
+  " name": "gimnasio",
+  "logo": "https://cdn-icons-png.flaticon.com/512/755/755298.png"
+},
+{
+  "_id": {
+    "$oid": "667accb67d391ca1fc842244"
+  },
+  " name": "pileta",
+  "logo": "https://cdn-icons-png.freepik.com/512/2088/2088136.png"
+},
+{
+  "_id": {
+    "$oid": "667ad2eb7d391ca1fc842245"
+  },
+  " name": "2-3 hambientes",
+  "logo": "https://cdn-icons-png.flaticon.com/512/1691/1691604.png"
+},
+{
+  "_id": {
+    "$oid": "667ad2fb7d391ca1fc842246"
+  },
+  " name": "living/comedor",
+  "logo": "https://cdn-icons-png.flaticon.com/512/673/673226.png"
+},
+{
+  "_id": {
+    "$oid": "667ad30d7d391ca1fc842247"
+  },
+  " name": "parrilla",
+  "logo": "https://cdn-icons-png.flaticon.com/512/114/114873.png"
+},
+{
+  "_id": {
+    "$oid": "667ad3207d391ca1fc842248"
+  },
+  " name": "sectores verdes",
+  "logo": "https://cdn-icons-png.flaticon.com/512/82/82260.png"
+},
+{
+  "_id": {
+    "$oid": "667ad3367d391ca1fc842249"
+  },
+  " name": "solarium",
+  "logo": "https://cdn-icons-png.flaticon.com/512/1684/1684652.png"
+},
+{
+  "_id": {
+    "$oid": "667ad3567d391ca1fc84224a"
+  },
+  " name": "huerta",
+  "logo": "https://cdn-icons-png.flaticon.com/512/15/15739.png"
+},
+{
+  "_id": {
+    "$oid": "667ad35f7d391ca1fc84224b"
+  },
+  " name": "sum",
+  "logo": "https://cdn-icons-png.flaticon.com/512/18/18625.png"
+},
+{
+  "_id": {
+    "$oid": "667ad3667d391ca1fc84224c"
+  },
+  " name": "sauna",
+  "logo": "https://cdn-icons-png.flaticon.com/512/449/449464.png"
+},
+{
+  "_id": {
+    "$oid": "667ad3767d391ca1fc84224d"
+  },
+  " name": "enfermeria",
+  "logo": "https://cdn-icons-png.flaticon.com/512/198/198056.png"
+},
+{
+  "_id": {
+    "$oid": "667ad3837d391ca1fc84224e"
+  },
+  " name": "comedor vip",
+  "logo": "https://cdn-icons-png.flaticon.com/512/4813/4813014.png"
+},
+{
+  "_id": {
+    "$oid": "667ad38f7d391ca1fc84224f"
+  },
+  " name": "coworking",
+  "logo": "https://cdn-icons-png.flaticon.com/512/2329/2329038.png"
+}]

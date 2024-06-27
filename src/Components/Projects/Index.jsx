@@ -1,5 +1,6 @@
 'use client'
-import projects from "./Projects"
+// import projects from "./Projects"
+import {getAllDevelopment} from "@/db/db"
 import Carousel from "./Slider"
 import React, { useEffect, useRef, useState } from 'react';
 import Link from "next/link";
@@ -9,6 +10,7 @@ const Project = () => {
 
     const  [project, setProject] = useState("ocultar")
     const divRef = useRef()
+    const projects = getAllDevelopment()
 
 
     useEffect(() => {
