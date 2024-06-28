@@ -58,7 +58,7 @@ const ProjectId = ({nombre}) => {
                 {/* <img src={imagen} alt="img-main" className='w-2/4 relative top-10 shadow-md'/> */}
                 <div className="grid grid-rows-5 bg-green grid-flow-col gap-3 p-12">
                     { project.confort.map((c,i) => {
-                        return <div className='text-center justify-center item-center w-20 m-4' kety={i}>
+                        return <div className='text-center justify-center item-center w-20 m-4' key={i}>
                             <img src={c.logo} width='70' height='70'/>
                             <p className='p-2'>{c.name}</p>
                         </div>
