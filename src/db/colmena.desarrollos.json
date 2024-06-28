@@ -8,96 +8,96 @@
       "_id": {
         "$oid": "667acb5d7d391ca1fc842242"
       },
-      " name": "cocina",
+      "name": "cocina",
       "logo": "https://cdn-icons-png.flaticon.com/512/5418/5418337.png"
     },
     {
       "_id": {
         "$oid": "667acbee7d391ca1fc842243"
       },
-      " name": "gimnasio",
+      "name": "gimnasio",
       "logo": "https://cdn-icons-png.flaticon.com/512/755/755298.png"
     },
     {
       "_id": {
         "$oid": "667accb67d391ca1fc842244"
       },
-      " name": "pileta",
+      "name": "pileta",
       "logo": "https://cdn-icons-png.freepik.com/512/2088/2088136.png"
     },
     {
       "_id": {
         "$oid": "667ad2eb7d391ca1fc842245"
       },
-      " name": "2-3 hambientes",
+      "name": "2-3 hambientes",
       "logo": "https://cdn-icons-png.flaticon.com/512/1691/1691604.png"
     },
     {
       "_id": {
         "$oid": "667ad2fb7d391ca1fc842246"
       },
-      " name": "living/comedor",
+      "name": "living/comedor",
       "logo": "https://cdn-icons-png.flaticon.com/512/673/673226.png"
     },
     {
       "_id": {
         "$oid": "667ad30d7d391ca1fc842247"
       },
-      " name": "parrilla",
+      "name": "parrilla",
       "logo": "https://cdn-icons-png.flaticon.com/512/114/114873.png"
     },
     {
       "_id": {
         "$oid": "667ad3207d391ca1fc842248"
       },
-      " name": "sectores verdes",
+      "name": "sectores verdes",
       "logo": "https://cdn-icons-png.flaticon.com/512/82/82260.png"
     },
     {
       "_id": {
         "$oid": "667ad3367d391ca1fc842249"
       },
-      " name": "solarium",
+      "name": "solarium",
       "logo": "https://cdn-icons-png.flaticon.com/512/1684/1684652.png"
     },{
       "_id": {
         "$oid": "667ad3567d391ca1fc84224a"
       },
-      " name": "huerta",
+      "name": "huerta",
       "logo": "https://cdn-icons-png.flaticon.com/512/15/15739.png"
     },
     {
       "_id": {
         "$oid": "667ad35f7d391ca1fc84224b"
       },
-      " name": "sum",
+      "name": "sum",
       "logo": "https://cdn-icons-png.flaticon.com/512/18/18625.png"
     },
     {
       "_id": {
         "$oid": "667ad3667d391ca1fc84224c"
       },
-      " name": "sauna",
+      "name": "sauna",
       "logo": "https://cdn-icons-png.flaticon.com/512/449/449464.png"
     },
     {
       "_id": {
         "$oid": "667ad3767d391ca1fc84224d"
       },
-      " name": "enfermeria",
+      "name": "enfermeria",
       "logo": "https://cdn-icons-png.flaticon.com/512/198/198056.png"
     },{
       "_id": {
         "$oid": "667ad3837d391ca1fc84224e"
       },
-      " name": "comedor vip",
+      "name": "comedor vip",
       "logo": "https://cdn-icons-png.flaticon.com/512/4813/4813014.png"
     },
     {
       "_id": {
         "$oid": "667ad38f7d391ca1fc84224f"
       },
-      " name": "coworking",
+      "name": "coworking",
       "logo": "https://cdn-icons-png.flaticon.com/512/2329/2329038.png"
     }
   ],
@@ -127,98 +127,98 @@
     "_id": {
       "$oid": "667acb5d7d391ca1fc842242"
     },
-    " name": "cocina",
+    "name": "cocina",
     "logo": "https://cdn-icons-png.flaticon.com/512/5418/5418337.png"
   },
   {
     "_id": {
       "$oid": "667acbee7d391ca1fc842243"
     },
-    " name": "gimnasio",
+    "name": "gimnasio",
     "logo": "https://cdn-icons-png.flaticon.com/512/755/755298.png"
   },
   {
     "_id": {
       "$oid": "667accb67d391ca1fc842244"
     },
-    " name": "pileta",
+    "name": "pileta",
     "logo": "https://cdn-icons-png.freepik.com/512/2088/2088136.png"
   },
   {
     "_id": {
       "$oid": "667ad2eb7d391ca1fc842245"
     },
-    " name": "2-3 hambientes",
+    "name": "2-3 hambientes",
     "logo": "https://cdn-icons-png.flaticon.com/512/1691/1691604.png"
   },
   {
     "_id": {
       "$oid": "667ad2fb7d391ca1fc842246"
     },
-    " name": "living/comedor",
+    "name": "living/comedor",
     "logo": "https://cdn-icons-png.flaticon.com/512/673/673226.png"
   },
   {
     "_id": {
       "$oid": "667ad30d7d391ca1fc842247"
     },
-    " name": "parrilla",
+    "name": "parrilla",
     "logo": "https://cdn-icons-png.flaticon.com/512/114/114873.png"
   },
   {
     "_id": {
       "$oid": "667ad3207d391ca1fc842248"
     },
-    " name": "sectores verdes",
+    "name": "sectores verdes",
     "logo": "https://cdn-icons-png.flaticon.com/512/82/82260.png"
   },
   {
     "_id": {
       "$oid": "667ad3367d391ca1fc842249"
     },
-    " name": "solarium",
+    "name": "solarium",
     "logo": "https://cdn-icons-png.flaticon.com/512/1684/1684652.png"
   },
   {
     "_id": {
       "$oid": "667ad3567d391ca1fc84224a"
     },
-    " name": "huerta",
+    "name": "huerta",
     "logo": "https://cdn-icons-png.flaticon.com/512/15/15739.png"
   },
   {
     "_id": {
       "$oid": "667ad35f7d391ca1fc84224b"
     },
-    " name": "sum",
+    "name": "sum",
     "logo": "https://cdn-icons-png.flaticon.com/512/18/18625.png"
   },
   {
     "_id": {
       "$oid": "667ad3667d391ca1fc84224c"
     },
-    " name": "sauna",
+    "name": "sauna",
     "logo": "https://cdn-icons-png.flaticon.com/512/449/449464.png"
   },
   {
     "_id": {
       "$oid": "667ad3767d391ca1fc84224d"
     },
-    " name": "enfermeria",
+    "name": "enfermeria",
     "logo": "https://cdn-icons-png.flaticon.com/512/198/198056.png"
   },
   {
     "_id": {
       "$oid": "667ad3837d391ca1fc84224e"
     },
-    " name": "comedor vip",
+    "name": "comedor vip",
     "logo": "https://cdn-icons-png.flaticon.com/512/4813/4813014.png"
   },
   {
     "_id": {
       "$oid": "667ad38f7d391ca1fc84224f"
     },
-    " name": "coworking",
+    "name": "coworking",
     "logo": "https://cdn-icons-png.flaticon.com/512/2329/2329038.png"
   }],
   "descripcion": "Colmena02 se encuentra en\nuna zona privilegiada a solo 20\nminutos del centro de Salta\nCapital, donde se combina la\ntranquilidad del entorno natural\ncon el confort de un complejo\nmoderno y cuidadosamente\ndiseñado.\nEl desarrollo se compone de\nunidades funcionales de 2 y 3\nambientes, pensadas para\nsatisfacer las necesidades de las\nfamilias, grupos de amigos y\nparejas que buscan un espacio\níntimo. Cada unidad cuenta con\ncochera propia para mayor\ncomodidad y seguridad.\nCon una arquitectura\nsustentable y colonial que se\nintegra armoniosamente al\nentorno, Colmena02 te permite\ndesconectarte del ruido y la\nrutina diaria mientras te rodeas\nde la belleza de los cerros\nsalteños",
@@ -241,98 +241,98 @@
     "_id": {
       "$oid": "667acb5d7d391ca1fc842242"
     },
-    " name": "cocina",
+    "name": "cocina",
     "logo": "https://cdn-icons-png.flaticon.com/512/5418/5418337.png"
   },
   {
     "_id": {
       "$oid": "667acbee7d391ca1fc842243"
     },
-    " name": "gimnasio",
+    "name": "gimnasio",
     "logo": "https://cdn-icons-png.flaticon.com/512/755/755298.png"
   },
   {
     "_id": {
       "$oid": "667accb67d391ca1fc842244"
     },
-    " name": "pileta",
+    "name": "pileta",
     "logo": "https://cdn-icons-png.freepik.com/512/2088/2088136.png"
   },
   {
     "_id": {
       "$oid": "667ad2eb7d391ca1fc842245"
     },
-    " name": "2-3 hambientes",
+    "name": "2-3 hambientes",
     "logo": "https://cdn-icons-png.flaticon.com/512/1691/1691604.png"
   },
   {
     "_id": {
       "$oid": "667ad2fb7d391ca1fc842246"
     },
-    " name": "living/comedor",
+    "name": "living/comedor",
     "logo": "https://cdn-icons-png.flaticon.com/512/673/673226.png"
   },
   {
     "_id": {
       "$oid": "667ad30d7d391ca1fc842247"
     },
-    " name": "parrilla",
+    "name": "parrilla",
     "logo": "https://cdn-icons-png.flaticon.com/512/114/114873.png"
   },
   {
     "_id": {
       "$oid": "667ad3207d391ca1fc842248"
     },
-    " name": "sectores verdes",
+    "name": "sectores verdes",
     "logo": "https://cdn-icons-png.flaticon.com/512/82/82260.png"
   },
   {
     "_id": {
       "$oid": "667ad3367d391ca1fc842249"
     },
-    " name": "solarium",
+    "name": "solarium",
     "logo": "https://cdn-icons-png.flaticon.com/512/1684/1684652.png"
   },
   {
     "_id": {
       "$oid": "667ad3567d391ca1fc84224a"
     },
-    " name": "huerta",
+    "name": "huerta",
     "logo": "https://cdn-icons-png.flaticon.com/512/15/15739.png"
   },
   {
     "_id": {
       "$oid": "667ad35f7d391ca1fc84224b"
     },
-    " name": "sum",
+    "name": "sum",
     "logo": "https://cdn-icons-png.flaticon.com/512/18/18625.png"
   },
   {
     "_id": {
       "$oid": "667ad3667d391ca1fc84224c"
     },
-    " name": "sauna",
+    "name": "sauna",
     "logo": "https://cdn-icons-png.flaticon.com/512/449/449464.png"
   },
   {
     "_id": {
       "$oid": "667ad3767d391ca1fc84224d"
     },
-    " name": "enfermeria",
+    "name": "enfermeria",
     "logo": "https://cdn-icons-png.flaticon.com/512/198/198056.png"
   },
   {
     "_id": {
       "$oid": "667ad3837d391ca1fc84224e"
     },
-    " name": "comedor vip",
+    "name": "comedor vip",
     "logo": "https://cdn-icons-png.flaticon.com/512/4813/4813014.png"
   },
   {
     "_id": {
       "$oid": "667ad38f7d391ca1fc84224f"
     },
-    " name": "coworking",
+    "name": "coworking",
     "logo": "https://cdn-icons-png.flaticon.com/512/2329/2329038.png"
   }],
   "descripcion": "Colmena 03 Te ofrece la\noportunidad de tener tu hogar\nrodeado de naturaleza, seguridad\ny buena compañía. Ubicado en la\nlocalidad de Coronel Moldes, a\nsolo 65 km de Salta capital, este\nproyecto inmobiliario te invita a\nvivir en un entorno natural\nenvidiable, con los cerros que\nrodean al dique Cabra Corral\ncomo marco incomparable.\nSe caracteriza por su arquitectura\nmoderna y respetuosa del\nentorno. La utilización de\nmateriales nobles, texturas y\ncolores cuidadosamente\nseleccionados crean un ambiente\narmonioso que se integra a la\nperfección con el paisaje natural.\nAdemás, el proyecto incorpora\nprácticas de construcción\nsustentable para minimizar su\nimpacto ambiental.",

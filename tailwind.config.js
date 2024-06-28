@@ -16,7 +16,8 @@ module.exports = {
       'greenlight': 'rgba(95, 98, 69, 0.5)',
       'greendark': '#4B4C37',
       'blue': '#172554',
-      'darkgrey': '#111827'
+      'darkgrey': '#111827',
+      'gray':'#d1d5db'
     },
     extend: {
       backgroundImage: {

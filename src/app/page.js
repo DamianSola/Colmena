@@ -6,8 +6,9 @@ import Description from "@/Components/About/Description";
 import Us from "@/Components/About/Us"
 import Footer from "@/Components/Footer/Index";
 import Project from "@/Components/Projects/Index";
-import More from "@/Components/About/Plus";
+// import More from "@/Components/About/Plus";
 import React, { useEffect } from 'react';
+import WeDo from "@/Components/About/WeDo";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
     <main className="bg-[url('https://www.shutterstock.com/image-photo/head-shot-portrait-happy-bearded-600nw-1740774431.jpg')] bg-no-repeat bg-top bg-cover bg-fixed md:min-h-screen flex-col items-center justify-between font-medium">
       <Landing/>
       <Description />
+      <WeDo/>
       <Project/>
       <Us/>
     </main>

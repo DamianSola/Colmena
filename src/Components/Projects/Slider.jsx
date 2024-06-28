@@ -10,21 +10,13 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
 
 import './style.css';
 
-// import required modules
-import { FreeMode, Navigation, Thumbs } from 'swiper/modules';
-import Image from 'next/image';
-
 export default function App({slides}) {
+
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
-  console.log(slides[0].imagen)
-
-  // useEffect(() => {
-  //   $('#imagenPrincipal').attr('src', rutaImagen);
-  // },[])
 
   return (
     <>
@@ -41,7 +33,7 @@ export default function App({slides}) {
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
       >
-        {slides.map((e,i) => {
+        {slides ? slides.map((e,i) => {
             return <SwiperSlide key={i} >
               <Link href={`/Project/${e.nombre}`} >
                 <img src={e.imagen}/>
@@ -49,8 +41,17 @@ export default function App({slides}) {
                 <span>
                   <h1>{e.nombre}</h1>
                 </span>
+                <p>{e.lugar}</p>
             </SwiperSlide>
-        })}
+        }):
+        <div class="animate-pulse">
+                       <div class="max-w-sm w-full mx-auto bg-white ">
+                      
+                         <div class="h-48 bg-gray shadow-md"></div>
+                        <div class="h-4 bg-gray rounded w-1/2 m-2"></div>
+                       </div>
+                     </div>
+          }
       </Swiper>
     </>
   );

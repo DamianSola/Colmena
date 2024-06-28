@@ -9,17 +9,22 @@ import Link from "next/link";
 const Project = () => {
 
     const  [project, setProject] = useState("ocultar")
+    const [projects , setProjects] = useState()
+
     const divRef = useRef()
-    const projects = getAllDevelopment()
+
+    // const projects = async () => await getAllDevelopment()
 
 
     useEffect(() => {
-       
+        
+        getAllDevelopment().then((data) => setProjects(data))
+        
         const handleScroll = () => {
             const div = divRef.current;
             const y = div ? div.getBoundingClientRect().y : null
 
-            if(y  > -1600 && y < 400) setProject('mostrar')
+            if(y  > -2000 && y < 400) setProject('mostrar')
         }
 
         window.addEventListener( "scroll", handleScroll);
@@ -29,10 +34,12 @@ const Project = () => {
     },[])
 
     return(
-        <div className="bg-white p-4 lg:px-24 lg:py-20 " id="projects">         
-                <h1 className={`text-left text-4xl font-medium mx-1 md:pb-8  tracking-wider ${project}`} ref={divRef}>DESARROLLOS</h1>
-                <div className={`hidden md:block  ${project}`} >
-                <Carousel slides={projects} />
+        <div className="bg-white p-4 lg:px-24 lg:py-20 " ref={divRef} id="projects">         
+                <h1 className={`text-left text-4xl font-medium mx-1 md:pb-8  tracking-wider ${project}`} >DESARROLLOS</h1>
+                <div className={`hidden md:block ${project}`} >
+                    {projects && 
+                        <Carousel slides={projects} />
+                    }
                 </div>
                 <div className={`flex-col md:hidden ${project}`} >
                     {projects && projects.map((e,i) => {
