@@ -44,7 +44,7 @@ const Project = () => {
                 <div className={`flex-col md:hidden ${project}`} >
                     {projects && projects.map((e,i) => {
                         return <div className="sm:w-full h-50 px-2 py-4 text-center transition items-center duration-500 transform brightness-30" key={i}>
-                            <Link href={`/Project/${e.id} `} >
+                            <Link href={`/Project/${e.nombre} `} >
                                 <img src={e.imagen} className="w-full brightness-50"/>
                             </Link>
                                 <p className="absolute top-0 text-white p-8 text-2xl border-white w-full">{e.nombre}</p>

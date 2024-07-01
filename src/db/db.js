@@ -2,16 +2,17 @@ import desarrollos from './colmena.desarrollos.json'
 
 export const getAllDevelopment = async() => {
 
-   const development = await desarrollos
-  //  console.log(development.map(e => e.confort))
+   const development = await desarrollos;
+
    return development;
 }
 
-export const getOneDevelopment = (name) => {
+export const getOneDevelopment = async (name) => {
 
-  let nombre = decodeURIComponent(name)
-  const development = desarrollos.find(d => d.nombre === nombre)
+
+  const nombre = decodeURIComponent(name)
+  const development = await desarrollos.find(d => d.nombre === nombre)
+
   return development;
 }
 
-getAllDevelopment()
