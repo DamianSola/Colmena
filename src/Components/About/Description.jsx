@@ -56,7 +56,7 @@ const Description = () =>{
                         </p>
                         <ReadMore  readMore={readMore}  setRead={handleClick} />
                     </div>
-                    <aside className="hidden md:flex justify-right items-right w-2/4 h-auto">
+                    <aside className="hidden md:flex justify-right items-center w-2/4 h-auto">
                         <img src={foto.src} alt="descripcion" />
                     </aside>
                 </div>

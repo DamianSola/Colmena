@@ -4,7 +4,7 @@ import Link from 'next/link';
 import LogoLandin from './LogoLanding.png';
 import LogoBlanco from "./LogoBlanco.png"
 import Image from 'next/image';
-
+ 
 const Home = () => {
     return (
         <div className="bg-black bg-opacity-50 ms:h-dvh sm:h-screen text-center flex justify-center flex-col" id="home">

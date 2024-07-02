@@ -36,9 +36,9 @@ const WeDo = () => {
             <div className={`bg-green ${animation}`}  ref={aboutRef}>
             <Image src={foto.src} height="500" width="500" alt='weDo' className="m-auto relative top-4"/>
             </div>
-            <div className="block md:flex pt-20">
-            <h1 className={`text-left text-4xl font-medium mb-5 tracking-wider w-2/4 ${animation}`}>¿QUE HACEMOS?</h1>
-            <p className={`lead text-left text-xl font-medium leading-relaxed  w-2/4 ${animation}`}>{weDo}</p>
+            <div className="block md:flex py-10 md:pt-20">
+            <h1 className={`text-left text-4xl font-medium mb-5 tracking-wider md:w-2/4 ${animation}`}>¿QUE HACEMOS?</h1>
+            <p className={`lead text-justify lg:text-left text-xl font-medium leading-relaxed  md:w-2/4 ${animation}`}>{weDo}</p>
             </div>
         </div>
     )

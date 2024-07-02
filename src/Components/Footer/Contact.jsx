@@ -40,35 +40,35 @@ const Contact = () => {
   return (
     <form ref={formRef} onSubmit={handleClick} className="flex-col mx-8 md:m-8 p-4 bg-transparent rounded md:w-2/5 md:mx-20">
       <label className="text-2xl md:text-lg font-medium">Nombre*</label>
-      <input className="w-full my-1 md:my-1 bg-green border-2 border-black"
+      <input className="w-full my-1 md:my-1 bg-green border-2 border-black px-2"
         type="text"
         name="name"
         value={input.name}
         onChange={handleChange} required />
       <br />
       <label className="text-2xl md:text-lg font-medium">Apellido*</label>
-      <input className="w-full my-1 md:my-1 bg-green border-2 border-black"
+      <input className="w-full my-1 md:my-1 bg-green border-2 border-black px-2"
         type="text"
         name="lastName"
         value={input.lastName}
         onChange={handleChange} required />
       <br />
       <label className="text-2xl md:text-lg font-medium">Empresa</label>
-      <input className="w-full my-1 md:my-1 bg-green border-2 border-black"
+      <input className="w-full my-1 md:my-1 bg-green border-2 border-black px-2"
         type="text"
         name="company"
         value={input.company}
         onChange={handleChange} />
       <br />
       <label className="text-2xl md:text-lg font-medium">Correo*</label>
-      <input className="w-full my-1 md:my-1 bg-green border-2 border-black"
+      <input className="w-full my-1 md:my-1 bg-green border-2 border-black px-2"
         type="email"
         name="email"
         value={input.email}
         onChange={handleChange} required />
       <br />
       <label className="text-2xl md:text-lg font-medium">Mensaje*</label><br />
-      <textarea className="w-full my-3 md:my-1 bg-green border-2 border-black"
+      <textarea className="w-full my-3 md:my-1 bg-green border-2 border-black px-2"
         name="message" rows="4"
         value={input.message}
         onChange={handleChange} required />
