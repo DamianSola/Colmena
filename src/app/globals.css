@@ -6,10 +6,6 @@ html{
   scroll-behavior: smooth;
 }
 
-main{
-  background-image: url('/_next/static/media/saltaColmena.4e49d65c.jpg');
-}
-
 @keyframes fadeInTop {
   0% {
     opacity: 0,5;
