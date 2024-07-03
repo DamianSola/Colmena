@@ -35,17 +35,17 @@ const ProjectId = ({project}) => {
             <img src={imagen} alt="img-main" className='lg:w-2/4 relative top-10 px-12 lg:px-0 lg:shadow-md'/>
         </div>}
         <div className="sm:flex items-top md:items-left  ">
-            <div className="grid grid-rows-5 bg-green grid-flow-col gap-3 md:px-12 px-8 justify-between">
+            {/* <div className="grid grid-rows-5 bg-green grid-flow-col gap-3 md:px-12 px-8 justify-between">
                 {confort && confort.map((c,i) => {
                     return <div className='text-center py-2 w-full md:p-4' key={i}>
                     <img src={c.logo} className='w-14 m-auto lg:w-20'/>
                     <p className='py-2 px-2 m-auto w-auto'>{c.name}</p>
                 </div>
                 })}
-            </div>
+            </div> */}
         {project &&  <div className='px-12'>
             <p className='py-4 md:text-left text-justify'>{descripcion2}</p>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 ">
+            <ul className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4 ">
                 {galeria && galeria.map((img, index) => {
                     return <li className="flex md:m-1" key={index}>
                     <span onClick={() => handleClick(index)} className='hover:opacity-80 cursor-pointer'>
