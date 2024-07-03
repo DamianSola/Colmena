@@ -35,11 +35,11 @@ const ProjectId = ({project}) => {
             <img src={imagen} alt="img-main" className='lg:w-2/4 relative top-10 px-12 lg:px-0 lg:shadow-md'/>
         </div>}
         <div className="sm:flex items-top md:items-left  ">
-            <div className="grid grid-rows-5 bg-green grid-flow-col gap-3 md:p-12 p-8 justify-between">
+            <div className="grid grid-rows-5 bg-green grid-flow-col gap-3 md:px-12 px-8 justify-between">
                 {confort && confort.map((c,i) => {
-                    return <div className='md:w-full text-center md:h-24 w-full lg:p-4' key={i}>
+                    return <div className='text-center py-2 w-full md:p-4' key={i}>
                     <img src={c.logo} className='w-14 m-auto lg:w-20'/>
-                    <p className='py-4 px-2 m-auto w-auto'>{c.name}</p>
+                    <p className='py-2 px-2 m-auto w-auto'>{c.name}</p>
                 </div>
                 })}
             </div>
