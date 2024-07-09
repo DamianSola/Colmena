@@ -30,7 +30,7 @@ const Footer = () => {
     },[])
 
     return(
-        <footer className={`bg-green z-5`} id="contact"  ref={footerRef}>
+        <footer className={`bg-orangeLight z-5`} id="contacto"  ref={footerRef}>
             <div className={`block sm:hidden ${animation}`}>
                 <h1 className="text-4xl text-semibold leading-loose mx-8 px-4 pt-4" >Contacto</h1>
                 <Contact/>
@@ -47,17 +47,11 @@ const Footer = () => {
                         <a href="mailto:grupocolmena.arq@gmail.com">grupocolmena.arq@gmail.com</a>
                     </strong>
                     </p>
-
-                    {/* <aside className="flex justify-center">
-                    <FaFacebook className="mr-3 text-4xl"/>
-                    <FaInstagram className="mr-3 text-4xl"/>
-                    <FaLinkedin className="mr-3 text-4xl"/>
-                    <FaTiktok className="mr-3 text-4xl"/>
-                    </aside> */}
-                    <p className="mt-5 py-10">© 2023 by damiansola.net</p>
+                    {/* <p className="mt-5 py-10">© 2023 by damiansola.net</p> */}
                 </aside>
+                
             </div>
-            <div className={`hidden sm:flex justify-around pb-4 ${animation}`}>
+            <div className={`hidden sm:flex justify-around pt-8 pb-20 ${animation}`}>
                 <aside className="px-14 py-10 w-1/3">
                 <h1 className="text-4xl text-semibold leading-loose">Contacto</h1>
                     <span className="my-10">
@@ -72,16 +66,12 @@ const Footer = () => {
                         <a href="mailto:grupocolmena.arq@gmail.com">grupocolmena.arq@gmail.com</a>
                     </strong>
                     </p>
-
-                    {/* <aside className="flex">
-                    <FaFacebook className="mr-3 text-4xl"/>
-                    <FaInstagram className="mr-3 text-4xl"/>
-                    <FaLinkedin className="mr-3 text-4xl"/>
-                    <FaTiktok className="mr-3 text-4xl"/>
-                    </aside> */}
-                    <p className="my-10">© 2023 by damiansola.net</p>
                 </aside>
                 <Contact/>
+            </div>
+            <div className="flex m-auto border-t w-4/5 pb-8 pt-2 justify-around">
+            <p className="px-2">©2023 GRUPO COLMENA SRL</p>
+            <p className="font-medium">Developed by Damian Sola</p>
             </div>
         </footer>
     )

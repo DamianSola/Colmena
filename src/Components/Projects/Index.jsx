@@ -34,8 +34,8 @@ const Project = () => {
     },[])
 
     return(
-        <div className="bg-white p-4 lg:px-24 lg:py-20 " ref={divRef} id="projects">         
-                <h1 className={`text-left text-4xl font-medium mx-1 md:pb-8  tracking-wider ${project}`} >DESARROLLOS</h1>
+        <div className="bg-white p-4 lg:px-24 lg:py-10 " ref={divRef} id="desarrollos">         
+                <h1 className={`md:text-left text-center text-4xl font-medium mx-1 pb-8  tracking-wider ${project}`} >DESARROLLOS</h1>
                 <div className={`hidden md:block ${project}`} >
                     {projects && 
                         <Carousel slides={projects} />

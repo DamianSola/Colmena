@@ -8,9 +8,10 @@ import React, { useState } from 'react';
 
 const LinkItems = [  
     {link:"Inicio", linkRef:"/"},
-    {link:"Nosotros", linkRef:"/#about"},
-    {link:"Proyectos", linkRef:"/#projects"},
-    {link:"Contacto", linkRef:"/#contact"},
+    {link:"¿que es Colmena?", linkRef:"/#about"},
+    {link:"desarrollos", linkRef:"/#desarrollos"},
+    {link:"Equipo", linkRef:"/#equipo"},
+    {link:"Contacto", linkRef:"/#contacto"},
 ]
 
 
