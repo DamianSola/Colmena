@@ -30,7 +30,7 @@ const Footer = () => {
     },[])
 
     return(
-        <footer className={`bg-orangeLight z-5`} id="contacto"  ref={footerRef}>
+        <footer className={`bg-green z-5`} id="contacto"  ref={footerRef}>
             <div className={`block sm:hidden ${animation}`}>
                 <h1 className="text-4xl text-semibold leading-loose mx-8 px-4 pt-4" >Contacto</h1>
                 <Contact/>
