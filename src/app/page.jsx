@@ -6,8 +6,14 @@ import Project from "@/Components/Projects/Index";
 import React, { useEffect } from 'react';
 import WeDo from "@/Components/About/WeDo";
 import Fondo from "./saltaColmena.jpg"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({ duration: 900 });
+  },[])
 
   return (
     <main className="bg-no-repeat bg-top bg-cover bg-fixed md:min-h-screen flex-col items-center justify-between font-medium"

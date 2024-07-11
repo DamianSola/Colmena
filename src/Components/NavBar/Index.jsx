@@ -2,7 +2,7 @@
 import logo from "./LogoColmena.png"
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 
@@ -17,9 +17,27 @@ const LinkItems = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
 
   return (
-    <nav className="bg-white fixed w-full z-20 fade-in-top">
+    <nav className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md' : 'bg-black bg-opacity-50'}`}>
       <div className="w-full mx-auto sm:px-6 lg:pl-24 sticky z-auto">
         <div className="flex px-5 items-center justify-between h-20">
           <div className="flex-shrink-0">
@@ -33,7 +51,7 @@ const Navbar = () => {
           <div className="hidden md:block px-16">
             <div className="flex items-baseline space-x-4">
               {LinkItems.map(l => {
-                return <Link key={l.link} className="text-black hover:text-green rounded-none delay-75 hover:border-b px-4 py-0 rounded-md text-base font-medium" href={l.linkRef} >{l.link}</Link>
+                return <Link key={l.link} className={`${isScrolled ? 'text-black hover:text-green' : 'text-white'}  rounded-none delay-75 hover:border-b px-4 py-0 rounded-md text-base font-medium`} href={l.linkRef} >{l.link}</Link>
               }
               )}
             </div>

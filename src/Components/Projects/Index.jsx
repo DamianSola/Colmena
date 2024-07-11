@@ -7,43 +7,26 @@ import Link from "next/link";
 
 
 const Project = () => {
-
-    const  [project, setProject] = useState("ocultar")
+    
     const [projects , setProjects] = useState()
-
-    const divRef = useRef()
-
-    // const projects = async () => await getAllDevelopment()
-
 
     useEffect(() => {
         
         getAllDevelopment().then((data) => setProjects(data))
-        
-        const handleScroll = () => {
-            const div = divRef.current;
-            const y = div ? div.getBoundingClientRect().y : null
-
-            if(y  > -2000 && y < 400) setProject('mostrar')
-        }
-
-        window.addEventListener( "scroll", handleScroll);
-    
-        return () => window.removeEventListener( "scroll", handleScroll)
 
     },[])
 
     return(
-        <div className="bg-white p-4 lg:px-24 lg:py-10 " ref={divRef} id="desarrollos">         
-                <h1 className={`md:text-left text-center text-4xl font-medium mx-1 pb-8  tracking-wider ${project}`} >DESARROLLOS</h1>
-                <div className={`hidden md:block ${project}`} >
+        <div className="bg-white p-4 lg:px-24 lg:py-10 "  id="desarrollos">         
+                <h1 className={`md:text-left text-center text-4xl font-medium mx-1 pb-8  tracking-wider `} data-aos="fade-up">DESARROLLOS</h1>
+                <div className={`hidden md:block `} >
                     {projects && 
-                        <Carousel slides={projects} />
+                        <Carousel slides={projects} data-aos="fade-up"/>
                     }
                 </div>
-                <div className={`flex-col md:hidden ${project}`} >
+                <div className={`flex-col md:hidden `} >
                     {projects && projects.map((e,i) => {
-                        return <div className="sm:w-full h-50 px-2 py-4 text-center transition items-center duration-500 transform brightness-30" key={i}>
+                        return <div className="sm:w-full h-50 px-2 py-4 text-center transition items-center duration-500 transform brightness-30" data-aos="fade-up" key={i}>
                             <Link href={`/Project/${e.nombre} `} >
                                 <img src={e.imagen} className="w-full brightness-50"/>
                             </Link>

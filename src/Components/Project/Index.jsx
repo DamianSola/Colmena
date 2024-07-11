@@ -1,7 +1,8 @@
 'use client'
-import React, { useEffect, useState } from 'react';
+import React, {useState } from 'react';
 import Modal from './Modal';
-import { getOneDevelopment } from './../../db/db';
+
+
 
 const ProjectId = ({project}) => {
 
@@ -25,28 +26,20 @@ const ProjectId = ({project}) => {
 
 
     return(
-        <div className="m-auto mt-20 bg-white">
-           {project &&  <div className="lg:flex items-center bg-orangeLight mb-14 justify-center lg:items-left justify-between ">
-            <div className='text-white px-12'>
-                <h1 className="text-4xl">{nombre}</h1>
-                <p className='font-semibold py-2'>lugar: {lugar}</p>
-                <p className='pt-2'>{descripcion}</p>
-            </div>
-            <img src={imagen} alt="img-main" className='lg:w-2/4 relative top-10 px-12 lg:px-0 lg:shadow-md'/>
-        </div>}
-        <div className="sm:flex items-top md:items-left  ">
-            {/* <div className="grid grid-rows-5 bg-green grid-flow-col gap-3 md:px-12 px-8 justify-between">
-                {confort && confort.map((c,i) => {
-                    return <div className='text-center py-2 w-full md:p-4' key={i}>
-                    <img src={c.logo} className='w-14 m-auto lg:w-20'/>
-                    <p className='py-2 px-2 m-auto w-auto'>{c.name}</p>
-                </div>
-                })}
-            </div> */}
-        {project &&  <div className='px-12'>
-            <p className='py-4 md:text-left text-justify'>{descripcion2}</p>
-            <ul className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-4 ">
-                {galeria && galeria.map((img, index) => {
+        <div className="m-auto bg-white">
+        <div className='w-full h-screen bg-black bg-opacity-50'>    
+            <section className='p-24 text-white absolute  z-10 h-full w-full flex flex-col justify-end bg-black bg-opacity-30'>
+                <p className='text-6xl font-bold' data-aos="fade-up">{nombre.toUpperCase()}</p>
+                <p className='flex my-2 sm:text-2xl font-semibold' data-aos="fade-up">
+                    <img src="https://img.icons8.com/?size=100&id=7891&format=png&color=FFFFFF" width='30' alt="ubicacion"  className='mr-2'/>
+                     {lugar}</p>
+            </section>
+            <img src={imagen} className='w-full h-screen'/>
+        </div>
+        <div className="sm:p-12">
+           
+            <ul className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-4 " data-aos="fade-up">
+                {galeria && galeria.slice(0,4).map((img, index) => {
                     return <li className="flex md:m-1" key={index}>
                     <span onClick={() => handleClick(index)} className='hover:opacity-80 cursor-pointer'>
                     <img src={img} alt={`Image ${index+1}`} className="w-full h-fit	"/>
@@ -55,10 +48,25 @@ const ProjectId = ({project}) => {
                 })
                 }
             </ul>
-        </div>}
-    
+         <div className=' bg-orangeLight py-12 text-white' data-aos="fade-up">
+            <p className='px-12 py-2 md:text-left text-justify' data-aos="fade-up">{descripcion}</p>
+            <p className='px-12 py-2 md:text-left text-justify' data-aos="fade-up">{descripcion2}</p>
+        </div>
+
+    <div className='py-4' >
+        <p className='px-12 py-4 sm:text-4xl font-medium' data-aos="fade-up">COMODIDADES</p>
+         <div className="flex flex-wrap bg-greenlight md:px-12 px-8 py-8 justify-evenly">
+                {confort && confort.map((c,i) => {
+                    return <div className='text-center my-2 md:p-4 w-1/3 lg:w-1/6 md:w-1/5 sm:w-1/4 border-x ' 
+                    data-aos="fade-up" key={i}>
+
+                    <img src={c.logo} className='m-auto w-8 lg:w-16 md:w-14'/>
+                    <p className='py-2 px-2 m-auto w-full'>{c.name}</p>
+                   
+                </div>
+                })}
+            </div>
     </div>
-    <div className='flex m-4 bg-black text-white' >
     </div>
         {galeria && <Modal image={galeria[currentImageIndex]} 
             imgI={currentImageIndex} 
@@ -67,6 +75,7 @@ const ProjectId = ({project}) => {
             next={handleNext}
             prev= {handlePrev}
         />}
+         
         </div>
     )
 }

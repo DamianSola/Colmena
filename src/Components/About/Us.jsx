@@ -29,27 +29,11 @@ const Us = () => {
 }
 
 const Profile = ({description,name,image,index}) =>{
-
-    const  [animation, setAnimation] = useState("ocultar")
-    const [readMore, setReadMore] = useState(false);
-
-    const usRef = useRef()
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const div = usRef.current;
-            const y = div ? div.getBoundingClientRect().y : null
-            if(y  > -280 && y < 500) setAnimation('mostrar')
-
-        }
-
-        window.addEventListener( "scroll", handleScroll);
     
-        return () => window.removeEventListener( "scroll", handleScroll)
-    },[])
-
+    const [readMore, setReadMore] = useState(false);
+  
     return(
-        <div className={`${index%2 === 0? 'bg-orange': "bg-greenlight"  } ${animation}` } ref={usRef} >
+        <div className={`${index%2 === 0? 'bg-orange': "bg-greenlight" }` }  >
         <h2 className="text-center text-4xl font-medium p-6">
             {name}
         </h2>
@@ -66,31 +50,15 @@ const Profile = ({description,name,image,index}) =>{
 
 const Profile2 = ({description, name,image,index}) => {
 
-    const  [animation, setAnimation] = useState("ocultar");
-    const [readMore, setReadMore] = useState(false);
-
-    const usRef = useRef()
-  
-
-    useEffect(() => {
-        const handleScroll = () => {
-            const div = usRef.current;
-            const y = div ? div.getBoundingClientRect().y : null
-            if(y  > -280 && y < 500) setAnimation('mostrar')
-        }
-
-        window.addEventListener( "scroll", handleScroll);
-        return () => window.removeEventListener( "scroll", handleScroll)
-    },[])
-
+    const [readMore, setReadMore] = useState(false);  
 
     if(index%2 === 0){
         return(
-            <div className={`flex bg-orangeLight sm:w-full w-4/5 m-auto ${animation} `}  ref={usRef}>
+            <div className={`flex bg-orangeLight sm:w-full w-4/5 m-auto`} data-aos="fade-up" >
             <div className="w-1/3 justify-left items-center self-center">
-            <img src={image} className="w-full h-auto m-auto" alt="foto-perfil"/>
+            <img src={image} className="w-full h-auto m-auto" alt="foto-perfil" data-aos="fade-right"/>
             </div>
-            <aside className="flex-col flex-1 justify-center items-start px-10"> : 
+            <aside className="flex-col flex-1 justify-center items-start px-10" data-aos="fade-left">
                 <h2 className="text-left text-4xl font-medium">
                     {name}
                 </h2>
@@ -104,8 +72,8 @@ const Profile2 = ({description, name,image,index}) => {
     }
 
     return(
-    <div className={`flex bg-greenlight  sm:w-full w-4/5 m-auto ${animation}`} ref={usRef}>
-            <aside className="flex-col w-full justify-center items-start px-10"> : 
+    <div className={`flex bg-greenlight  sm:w-full w-4/5 m-auto`}>
+            <aside className="flex-col w-full justify-center items-start px-10" data-aos="fade-right">
                 <h2 className="text-left text-4xl font-medium">
                     {name}
                 </h2>
@@ -115,7 +83,7 @@ const Profile2 = ({description, name,image,index}) => {
                 <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/>
             </aside>
             <div className="w-1/2 items-center justify-right self-center">
-            <img src={image} className="w-full h-auto m-auto" alt="foto-perfil"/>
+            <img src={image} className="w-full h-auto m-auto" alt="foto-perfil" data-aos="fade-left"/>
             </div>
     </div>
     )
