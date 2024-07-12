@@ -33,7 +33,7 @@ const Profile = ({description,name,image,index}) =>{
     const [readMore, setReadMore] = useState(false);
   
     return(
-        <div className={`${index%2 === 0? 'bg-orange': "bg-greenlight" }` }  >
+        <div className={`${index%2 === 0? 'bg-orange': "bg-greenlight" }` } data-aos="fade-up" >
         <h2 className="text-center text-4xl font-medium p-6">
             {name}
         </h2>

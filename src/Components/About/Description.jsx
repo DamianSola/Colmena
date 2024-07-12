@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from 'react';
 import About from "./About.json"
-import foto from "./aboutColmena.png"
+import foto from "./queSomos.jpg"
 
 
 const Description = () =>{

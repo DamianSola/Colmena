@@ -19,9 +19,9 @@ const Project = () => {
     return(
         <div className="bg-white p-4 lg:px-24 lg:py-10 "  id="desarrollos">         
                 <h1 className={`md:text-left text-center text-4xl font-medium mx-1 pb-8  tracking-wider `} data-aos="fade-up">DESARROLLOS</h1>
-                <div className={`hidden md:block `} >
+                <div className={`hidden md:block `} data-aos="fade-up">
                     {projects && 
-                        <Carousel slides={projects} data-aos="fade-up"/>
+                        <Carousel slides={projects} />
                     }
                 </div>
                 <div className={`flex-col md:hidden `} >
@@ -32,7 +32,6 @@ const Project = () => {
                             </Link>
                                 <p className="absolute top-0 text-white p-8 text-2xl border-white w-full">{e.nombre}</p>
                         </div>
-
                     })}
                 </div>
         </div>

@@ -27,20 +27,20 @@ const ProjectId = ({project}) => {
 
     return(
         <div className="m-auto bg-white">
-        <div className='w-full h-screen bg-black bg-opacity-50'>    
-            <section className='p-24 text-white absolute  z-10 h-full w-full flex flex-col justify-end bg-black bg-opacity-30'>
-                <p className='text-6xl font-bold' data-aos="fade-up">{nombre.toUpperCase()}</p>
+        <div className='w-full md:h-screen bg-black md:bg-opacity-50' >    
+            <section className='p-24 text-white absolute zz-10 h-1/2 md:h-full w-full flex flex-col sm:justify-end justify-center bg-black bg-opacity-30'>
+                <p className='text-3xl ms:text-6xl font-bold' data-aos="fade-up">{nombre.toUpperCase()}</p>
                 <p className='flex my-2 sm:text-2xl font-semibold' data-aos="fade-up">
                     <img src="https://img.icons8.com/?size=100&id=7891&format=png&color=FFFFFF" width='30' alt="ubicacion"  className='mr-2'/>
                      {lugar}</p>
             </section>
-            <img src={imagen} className='w-full h-screen'/>
+            <img src={imagen} className='w-full py-20 md:py-0 md:h-screen'/>
         </div>
-        <div className="sm:p-12">
-           
-            <ul className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-4 " data-aos="fade-up">
+        <div className="sm:p-12 pb-12">
+        <p className='px-12 py-4 md:text-left text-center text-4xl font-medium' data-aos="fade-up">GALERÍA</p>
+            <ul className="grid grid-cols-1 sm:grid-cols-3 grid-cols-2 gap-4 " data-aos="fade-up">
                 {galeria && galeria.slice(0,4).map((img, index) => {
-                    return <li className="flex md:m-1" key={index}>
+                    return <li className="flex m-1" key={index}>
                     <span onClick={() => handleClick(index)} className='hover:opacity-80 cursor-pointer'>
                     <img src={img} alt={`Image ${index+1}`} className="w-full h-fit	"/>
                     </span>
@@ -54,7 +54,7 @@ const ProjectId = ({project}) => {
         </div>
 
     <div className='py-4' >
-        <p className='px-12 py-4 sm:text-4xl font-medium' data-aos="fade-up">COMODIDADES</p>
+        <p className='px-12 py-4 md:text-left text-center text-4xl font-medium' data-aos="fade-up">COMODIDADES</p>
          <div className="flex flex-wrap bg-greenlight md:px-12 px-8 py-8 justify-evenly">
                 {confort && confort.map((c,i) => {
                     return <div className='text-center my-2 md:p-4 w-1/3 lg:w-1/6 md:w-1/5 sm:w-1/4 border-x ' 
