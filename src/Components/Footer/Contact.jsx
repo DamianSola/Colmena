@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-    <form ref={formRef} onSubmit={handleClick} className="flex-col mx-8 md:m-8 p-4 bg-transparent rounded md:w-2/5 md:mx-20" data-aos="fade-up">
+    <form ref={formRef} onSubmit={handleClick} className="flex-col pt-4" data-aos="fade-up">
       <label className="text-base md:text-lg font-medium">NOMBRE Y APELLIDO</label>
       <input className="w-full my-1 md:my-1 bg-green border-2 border-black px-2"
         type="text"

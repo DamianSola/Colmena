@@ -41,7 +41,6 @@ export default function App({slides}) {
                 <span>
                   <h1>{e.nombre}</h1>
                 </span>
-                <p>{e.lugar}</p>
             </SwiperSlide>
         }):
         <div class="animate-pulse">

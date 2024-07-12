@@ -17,7 +17,8 @@ const Project = () => {
     },[])
 
     return(
-        <div className="bg-white p-4 lg:px-24 lg:py-10 "  id="desarrollos">         
+        <div className="bg-white p-4 lg:px-24 lg:py-10 md:h-screen"  id="desarrollos">
+            <div className="h-10 w-full bg-green"></div>       
                 <h1 className={`md:text-left text-center text-4xl font-medium mx-1 pb-8  tracking-wider `} data-aos="fade-up">DESARROLLOS</h1>
                 <div className={`hidden md:block `} data-aos="fade-up">
                     {projects && 

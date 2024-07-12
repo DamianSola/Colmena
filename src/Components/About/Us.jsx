@@ -9,17 +9,16 @@ const { default: Image } = require("next/image");
 const Us = () => {
 
     const {people} = About;
-
-
     
     return(
         <div className="bg-white justify-center w-full " id="equipo">
-            <div className="block sm:hidden">
+            <h1 className={`md:pl-24 py-8 text-center md:text-left text-4xl font-medium tracking-wider md:w-2/4 `} data-aos="fade-up">EQUIPO</h1>
+            <div className="block md:hidden">
                 {people.map((e,i) => {
                     return <Profile key={i}  index={i} description={e.bio} image={e.image} name={e.name} />
                 })}
             </div>
-            <div className={`hidden sm:block justify-center sm:px-6 lg:px-24`} > 
+            <div className={`hidden md:block justify-center sm:px-6 lg:px-20`} > 
             {people.map((e,i) => {
                     return <Profile2 key={i} index={i} description={e.bio} image={e.image} name={e.name} />
                 })}
@@ -39,9 +38,9 @@ const Profile = ({description,name,image,index}) =>{
         </h2>
         <img src={image}  className="mx-auto w-1/2" alt="foto-perfil"/>
         <p className="plead mx-6 mt-5 pb-5 text-justify text-base font-medium leading-relaxed">
-            {readMore? description : description.slice(0,500)+"..."}                
+           {description}                
         </p>
-        <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/>
+        {/* <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/> */}
     </div>
     )
 }
@@ -55,17 +54,17 @@ const Profile2 = ({description, name,image,index}) => {
     if(index%2 === 0){
         return(
             <div className={`flex bg-orangeLight sm:w-full w-4/5 m-auto`} data-aos="fade-up" >
-            <div className="w-1/3 justify-left items-center self-center">
-            <img src={image} className="w-full h-auto m-auto" alt="foto-perfil" data-aos="fade-right"/>
+            <div className="w-1/4 items-center self-center">
+            <img src={image} className="w-64 h-auto m-auto" alt="foto-perfil" data-aos="fade-right"/>
             </div>
             <aside className="flex-col flex-1 justify-center items-start px-10" data-aos="fade-left">
-                <h2 className="text-left text-4xl font-medium">
+                <h2 className="text-left py-2 text-4xl font-medium">
                     {name}
                 </h2>
-                <p className="plead my-4 text-justify text-base font-medium leading-relaxed">
-                {readMore? description : description.slice(0,550)+"..."}                
+                <p className="plead my-4 text-justify text-sm font-medium leading-relaxed">
+                {description}                
                 </p>
-                <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/>
+                {/* <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/> */}
             </aside>
         </div>
         )
@@ -74,16 +73,16 @@ const Profile2 = ({description, name,image,index}) => {
     return(
     <div className={`flex bg-greenlight  sm:w-full w-4/5 m-auto`}>
             <aside className="flex-col w-full justify-center items-start px-10" data-aos="fade-right">
-                <h2 className="text-left text-4xl font-medium">
+                <h2 className="text-left text-4xl py-2 font-medium">
                     {name}
                 </h2>
-                <p className="plead my-4 text-justify text-base font-medium leading-relaxed">
-                {readMore? description : description.slice(0,550)+"..."}                
+                <p className="plead my-4 text-justify text-sm font-medium leading-relaxed">
+                {description}                
                 </p>
-                <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/>
+                {/* <ReadMore setRead={() => setReadMore(!readMore)} readMore={readMore}/> */}
             </aside>
-            <div className="w-1/2 items-center justify-right self-center">
-            <img src={image} className="w-full h-auto m-auto" alt="foto-perfil" data-aos="fade-left"/>
+            <div className="w-1/4 items-center self-center">
+            <img src={image} className="w-64 h-auto m-auto" alt="foto-perfil" data-aos="fade-left"/>
             </div>
     </div>
     )
