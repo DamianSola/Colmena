@@ -1,7 +1,5 @@
 [{
-  "_id": {
-    "$oid": "667ad91c7d391ca1fc842251"
-  },
+  "_id": 1,
   "imagen":"https://damiansola.github.io/colmena.github.io/colmena01/AEREA%2001.jpg",
   "confort": [
     {
@@ -120,9 +118,7 @@
   "nombre": "colmena 1"
 },
 {
-  "_id": {
-    "$oid": "667ada037d391ca1fc842252"
-  },
+  "_id": 2,
   "imagen":"https://damiansola.github.io/colmena.github.io/colmena02/EXT%20R4%20(1).jpg",
   "confort": 
   [
@@ -236,9 +232,7 @@
   "nombre": "colmena 2"
 },
 {
-  "_id": {
-    "$oid": "667ada0a7d391ca1fc842253"
-  },
+  "_id": 3,
   "imagen":"https://damiansola.github.io/colmena.github.io/colmena03/AEREA%20DETALLE.jpg",
   "confort": [
     {
