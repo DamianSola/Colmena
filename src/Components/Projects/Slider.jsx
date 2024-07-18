@@ -43,11 +43,11 @@ export default function App({slides}) {
                 </span>
             </SwiperSlide>
         }):
-        <div class="animate-pulse">
-                       <div class="max-w-sm w-full mx-auto bg-white ">
+        <div className="animate-pulse">
+                       <div className="max-w-sm w-full mx-auto bg-white ">
                       
-                         <div class="h-48 bg-gray shadow-md"></div>
-                        <div class="h-4 bg-gray rounded w-1/2 m-2"></div>
+                         <div className="h-48 bg-gray shadow-md"></div>
+                        <div className="h-4 bg-gray rounded w-1/2 m-2"></div>
                        </div>
                      </div>
           }

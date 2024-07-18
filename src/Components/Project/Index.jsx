@@ -38,16 +38,29 @@ const ProjectId = ({project}) => {
         </div>
         <div className="sm:p-12 pb-12">
         <p className='px-12 md:text-left text-center text-4xl font-medium' data-aos="fade-up">GALERÍA</p>
+        {galeria ? 
             <ul className="grid grid-cols-1 sm:grid-cols-3 grid-cols-2 gap-4 py-8" data-aos="fade-up">
-                {galeria && galeria.map((img, index) => {
+                { galeria.map((img, index) => {
                     return <li className="flex m-1" key={index}>
                     <span onClick={() => handleClick(index)} className='hover:opacity-80 cursor-pointer'>
-                    <img src={img} alt={`Image ${index+1}`} className="w-full h-fit	"/>
+                    <img src={img} alt={`Image ${index+1}`} className="w-full h-auto"/>
                     </span>
                 </li>
                 })
-                }
-            </ul>
+            } 
+            </ul> :
+            <div class="animate-pulse sm:flex block sm:justify-between">
+                    <div className="max-w-sm w-full bg-white m-auto sm:m-2">
+                      <div className="min-h-48 bg-gray shadow-md"></div>
+                    </div>
+                    <div className="max-w-sm w-full bg-white m-auto my-2 sm:m-2">
+                      <div className="min-h-48 bg-gray shadow-md"></div>
+                    </div>
+                    <div className="max-w-sm w-full bg-white m-auto sm:m-2">
+                      <div className="min-h-48 bg-gray shadow-md"></div>
+                    </div>
+                  </div>
+        }
          <div className=' bg-orangeLight py-12 text-white' data-aos="fade-up">
             <p className='px-12 text-justify' data-aos="fade-up">{descripcion}</p>
             <p className='px-12 text-justify' data-aos="fade-up">{descripcion2}</p>

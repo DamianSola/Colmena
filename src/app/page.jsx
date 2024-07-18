@@ -16,8 +16,8 @@ export default function Home() {
   },[])
 
   return (
-    <main className="bg-no-repeat bg-top bg-cover bg-fixed md:min-h-screen flex-col items-center justify-between font-medium"
-    style={{backgroundImage: `url(${Fondo.src})`}}>
+    <main className="bg-no-repeat bg-top sm:bg-cover bg-fixed min-h-screen flex-col items-center justify-between font-medium"
+    style={{backgroundImage: `url(${Fondo.src})`}  }>
       <Landing/>
       <Description />
       <WeDo/>
